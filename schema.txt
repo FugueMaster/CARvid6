@@ -1,0 +1,8 @@
+SQL schema
+person(pid: int)
+enter_issue(iid: int,  timestamp: time, comments: varchar(1000), type: set, uid: int)
+heavy_traffic(iid: int, location: varchar(100), long: double, lat: double)
+breakdown(iid: int, lane_no:int(1), location: varchar(100), carplate: varchar(10), long: double, lat: double)
+accidents(iid: int, lane_no: int(1), location: varchar(100), long: double, lat: double)
+closure(iid: int, s_date: date, e_date: date, location: varchar(100), long: double, lat: double)
+roadworks(iid: int, lane_no: int(1), date: date, est_duration: int(1), location: varchar(100), long: double, lat: double)
