@@ -11,7 +11,7 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-$con = mysqli_connect("localhost","root","LunE_1224","ip_schema"); // localhost, my_user, password, schema
+$con = mysqli_connect("localhost","root","<your root password>","ip_schema"); // localhost, my_user, password, schema
 // to get connection from mysql workbench
 
 if (mysqli_connect_errno()) {
