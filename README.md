@@ -8,4 +8,5 @@ IMPORTANT NOTES
 3) follow the installation instructions in Telegram
 4) create schema called 'ip_schema' in workbench
 5) run the SQL statements in workbench from ipdb.sql
-6) Remember to put your root password in ip_netbeans/index.php everythime you run the php application
+6) Remember to put your root password in ip_netbeans/index.php everytime you run the php application
+7) Remember to run apache and mysql services in xampp
