@@ -4,7 +4,7 @@ CREATE TABLE person (
 );
 
 CREATE TABLE enter_issue(
-    iid int NOT NULL UNIQUE,
+    iid int NOT NULL AUTO_INCREMENT ,
     timestamp time,
     comments varchar(100),
     type set("accident", 
@@ -20,7 +20,7 @@ CREATE TABLE enter_issue(
 );
 
 CREATE TABLE heavy_traffic(
-    iid int NOT NULL UNIQUE,
+    iid int NOT NULL AUTO_INCREMENT,
     location VARCHAR(100),
     lon double,
     lat double,
@@ -30,7 +30,7 @@ CREATE TABLE heavy_traffic(
 );
 
 CREATE TABLE breakdown(
-    iid int NOT NULL UNIQUE,
+    iid int NOT NULL AUTO_INCREMENT,
     carplate VARCHAR(10),
     lane_no int(1),
     location VARCHAR(100),
@@ -42,7 +42,7 @@ CREATE TABLE breakdown(
 );
 
 CREATE TABLE accidents(
-    iid int NOT NULL UNIQUE,
+    iid int NOT NULL AUTO_INCREMENT,
     lane_no int(1),
     location varchar(100),
     lon double,
@@ -53,7 +53,7 @@ CREATE TABLE accidents(
 );
 
 CREATE TABLE closure(
-    iid int NOT NULL UNIQUE,
+    iid int NOT NULL AUTO_INCREMENT,
     s_date date,
     e_date date,
     location varchar(100),
@@ -65,7 +65,7 @@ CREATE TABLE closure(
 );
 
 CREATE TABLE roadworks(
-    iid int NOT NULL UNIQUE,
+    iid int NOT NULL AUTO_INCREMENT,
     lane_no int(1),
     date date,
     est_duration int(1),
