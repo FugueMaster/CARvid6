@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="background-color:DodgerBlue;">Meeting 2</h1>
+<h1>Group name: CARvid 5</h1>
+<h1>Project title: TRaffic INformation Display System (TRINDS)</h1>
+
+<p style="background-color:Tomato;">Jeremy/Khat/JH in charge of HTML/CSS</p>
+<p style="background-color:Tomato;">LQ/Rycca/Sean in charge of PHP</p>
+<p style="background-color:Tomato;">Building on our idea: Break down map into northeast,southwest regions etc</p>
+
+<p style="border:2px solid Violet;"> Building on our idea: Break down map into northeast,southwest regions etc</p>
+<p style="border:2px solid Violet;"> Statistics to be displayed via charts</p>
+<p style="border:2px solid Violet;"> Colour intensity determines the rate of accident</p>
+<p style="border:2px solid Violet;"> Regions that has a high accident rate will be in a higher colour intensity</p>
+
+
+</body> 
+</html> 
