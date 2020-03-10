@@ -41,7 +41,9 @@
         zoom: 9 // starting zoom
     });
     
-    map.on('mousemove', function(e) {
+
+    // get coordinates from mouse pointer
+    map.on('click', function(e) {
         document.getElementById('info').innerHTML =
         // e.point is the x, y coordinates of the mousemove event relative
         // to the top-left corner of the map
@@ -49,7 +51,18 @@
         '<br />' +
         // e.lngLat is the longitude, latitude geographical position of the event
         JSON.stringify(e.lngLat.wrap());
+
+        var marker = new mapboxgl.Marker({
+        draggable: false
+        })
+        .setLngLat(e.lngLat)
+        .addTo(map);
     });
+
+
+    
+
+    //   }
 </script>
 
 </body>
