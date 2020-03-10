@@ -1,0 +1,16 @@
+@media screen and (min-width:769px)
+{
+}
+
+@media screen and (min-device-width:481px)  and (max-device-width: 768px)
+{
+#orderhistory
+    {
+     margin-left:100px;
+    }
+    th
+    {
+        font-size:12px;
+    }
+
+}

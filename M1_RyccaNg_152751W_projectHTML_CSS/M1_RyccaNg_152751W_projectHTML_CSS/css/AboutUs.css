@@ -1,0 +1,23 @@
+@media screen and (min-width:769px)
+{
+#AboutUs 
+{
+    margin-left:310px;
+    height:300px;
+
+}
+
+}
+
+@media screen and (min-device-width:481px)  and (max-device-width: 768px)
+{
+    #AboutUs 
+    {
+     margin-left:180px;   
+    }
+    #section1
+    {
+    height:755px;
+    }
+}
+    
