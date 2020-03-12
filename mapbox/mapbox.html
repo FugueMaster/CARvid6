@@ -8,12 +8,12 @@
 <link href="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css" rel="stylesheet" />
 <style>
 	body { margin: 0; padding: 0; }
-	#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+	#map { position: absolute; top: 0; bottom: 0; width: 70%; height: 50% }
 </style>
 </head>
 <body>
-    <!-- show coordinates -->
-    <style type="text/css">
+    <!-- show coordinates in webpage for developing/debugging purposes -->
+    <!-- <style type="text/css">
         #info {
         display: block;
         position: relative;
@@ -27,7 +27,7 @@
         color: #222;
         background: #fff;
         }    
-    </style>
+    </style> -->
 
     <!-- Geocoder API -->
     <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js"></script>
@@ -87,8 +87,11 @@
         new MapboxGeocoder({
             accessToken: mapboxgl.accessToken,
             mapboxgl: mapboxgl
-        })
-    );
+        }));
+
+    
+        
+
     </script>
 
 </body>
