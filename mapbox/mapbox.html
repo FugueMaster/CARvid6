@@ -13,7 +13,7 @@
 </head>
 <body>
     <!-- show coordinates -->
-    <!-- <style type="text/css">
+    <style type="text/css">
         #info {
         display: block;
         position: relative;
@@ -27,7 +27,7 @@
         color: #222;
         background: #fff;
         }    
-    </style> -->
+    </style>
 
     <!-- Geocoder API -->
     <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js"></script>
@@ -40,17 +40,26 @@
     <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
     
-    
+
     <!-- Set map -->
     <div id="map"></div>
     <pre id="info"></pre>
     <script>
 	    mapboxgl.accessToken = 'pk.eyJ1IjoiZnVndWVtYXN0ZXIiLCJhIjoiY2s3aG45dDQ0MGM4YzNmbGxiM3JqaXBlaCJ9.UXkXKi2Cq8veJTtkUYq8wg';
+        
+        // Set scorlling boundaries to Singapore Map
+        var bounds = [
+            [103.56480861951604, 1.154021455003118], // Southwest coordinates[lng, lat]
+            [104.13164125586022, 1.518896810581026] // Northeast coordinates[lng, lat]
+        ];
+
+        // Set map 
         var map = new mapboxgl.Map({
             container: 'map', // container id
             style: 'mapbox://styles/fuguemaster/ck7ho8svq54td1ip8d8w18vmt', // stylesheet location
             center: [103.8198, 1.3521], // starting position [lng, lat], Singapore
-            zoom: 14 // starting zoom
+            zoom: 14, // starting zoom
+            maxBounds: bounds // Sets bounds as max
         });
     
 
