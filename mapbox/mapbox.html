@@ -8,12 +8,25 @@
 <link href="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css" rel="stylesheet" />
 <style>
 	body { margin: 0; padding: 0; }
-	#map { position: absolute; top: 0; bottom: 0; width: 70%; height: 50% }
+	#map { position: absolute; top: 0; bottom: 0; width: 100%; height: 100% }
 </style>
 </head>
 <body>
     <!-- show coordinates in webpage for developing/debugging purposes -->
-    <!-- <style type="text/css">
+    <style type="text/css">
+        .displayhelp {
+        display: block;
+        position: relative;
+        margin: 0px auto;
+        width: 50%;
+        padding: 10px;
+        border: none;
+        border-radius: 3px;
+        font-size: 12px;
+        text-align: center;
+        color: #222;
+        background: #fff;
+        }
         #info {
         display: block;
         position: relative;
@@ -27,7 +40,7 @@
         color: #222;
         background: #fff;
         }    
-    </style> -->
+    </style>
 
     <!-- Geocoder API -->
     <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js"></script>
@@ -44,6 +57,11 @@
     <!-- Set map -->
     <div id="map"></div>
     <pre id="info"></pre>
+    <div class="displayhelp">
+        Select the location you want to report an incident
+    </div>
+
+    <!-- Mapbox Script -->
     <script>
 	    mapboxgl.accessToken = 'pk.eyJ1IjoiZnVndWVtYXN0ZXIiLCJhIjoiY2s3aG45dDQ0MGM4YzNmbGxiM3JqaXBlaCJ9.UXkXKi2Cq8veJTtkUYq8wg';
         
