@@ -6,49 +6,51 @@ and open the template in the editor.
 -->
 <html lang="en">
  <?php include 'header.inc'?>
-  
-  <main id="main">
+ 
+    <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex justify-content-center align-items-center">
+    <div id="heroCarousel" class="container carousel carousel-fade" data-ride="carousel">
 
-    <!-- ======= About Us Section ======= -->
-    <section class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>About Us</h2>
-          <ol>
-            <li><a href="webpage.html">Home</a></li>
-            <li>About Us</li>
-          </ol>
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animated fadeInDown">Welcome <span>to TRINDS</span></h2>
+          <p class="animated fadeInUp">TRaffic INformation Display System(TRINDS)</p>
+		  <p class="animated fadeInUp">Your one-stop updated traffic news for all</p>
+          <a href="about.html" class="btn-get-started animated fadeInUp">Read More</a>
         </div>
-
       </div>
-    </section><!-- End About Us Section -->
-	
-	<!-- ======= About Section ======= -->
-	<section class="about" data-aos="fade-up">
-      <div class="container">
 
-        <div class="row">
-          <div class="col-lg-6">
-            <img src="assets/img/jam.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0">
-            <h3>TRINDS is a service platform where users are updated on the latest traffic news on the road.</h3>
-            <p class="font-italic">
-              Users can submit the following traffic information to us.
-            </p>
-            <ul>
-              <li><i class="icofont-check-circled"></i> Accidents</li>
-              <li><i class="icofont-check-circled"></i> Breakdowns</li>
-              <li><i class="icofont-check-circled"></i> Road works</li>
-			  <li><i class="icofont-check-circled"></i> Heavy Traffic</li>
-			  <li><i class="icofont-check-circled"></i> Road closures</li>
-            </ul>
-          </div>
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animated fadeInDown">No time to listen to the radio for traffic updates?</h2>
+          <p class="animated fadeInUp">Fret Not! Look out for the latest traffic updates from our site</p>
+          <a href="map.html" class="btn-get-started animated fadeInUp">Find out how</a>
         </div>
-
       </div>
-    </section><!-- End About Section -->
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animated fadeInDown">Stuck in a traffic jam or encounter any vehicle breakdowns?</h2>
+          <p class="animated fadeInUp">Help others by submitting an entry to us </p>
+          <a href="entry.html" class="btn-get-started animated fadeInUp">Submit now</a>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+    </div>
+    </section><!-- End Hero -->
   
 	<?php include 'footer.inc'?>
   </body>
