@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<?php include 'header.inc'?>
+
 <html>
+    <?php include 'header.inc'?>
 <head>
 <meta charset="utf-8" />
 <title>MapBox</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
 <script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js"></script>
 <link href="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css" rel="stylesheet" />
-<style>
-	
-</style>
 	
 
 </head>
@@ -17,7 +15,7 @@
     <!-- show coordinates in webpage for developing/debugging purposes -->
     <style type="text/css">
       #map {
-        margin-top : 50px;
+        margin-top : 80px;
         height: 80%;
       }
       /* Optional: Makes the sample page fill the window. */
@@ -25,10 +23,11 @@
         height: 100%;
         margin: 0;
         padding: 0;
-        .displayhelp {
+      }
+       #displayhelp {
         display: block;
         position: relative;
-        //margin: 0px auto;
+        margin: 0px auto;
         width: 50%;
         padding: 10px;
         border: none;
@@ -38,22 +37,9 @@
         color: #222;
         background: #fff;
         }
-        #info{
-        display: block;
-        position: relative;
-        //margin: 0px auto;
-        width: 50%;
-        padding: 10px;
-        border: none;
-        border-radius: 3px;
-        font-size: 12px;
-        text-align: center;
-        color: #222;
-        background: #fff;
-        
     </style>
 
-    <!-- Geocoder API -->
+   <!-- Geocoder API -->
     <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js"></script>
     <link
         rel="stylesheet"
@@ -66,10 +52,9 @@
     
 
     <!-- Set map -->
-    <div id="map1"></div>
-    <pre id="info"></pre>
-    <div class="displayhelp">
-        Select the location you want to report an incident
+    <div id="map"></div>
+    <div id="displayhelp">
+        Select the location you want to report an incident: 
     </div>
 
     <!-- Mapbox Script -->
@@ -84,7 +69,7 @@
 
         // Set map 
         var map = new mapboxgl.Map({
-            container: 'map1', // container id
+            container: 'map', // container id
             style: 'mapbox://styles/fuguemaster/ck7ho8svq54td1ip8d8w18vmt', // stylesheet location
             center: [103.8198, 1.3521], // starting position [lng, lat], Singapore
             zoom: 14, // starting zoom
@@ -92,15 +77,8 @@
         });
     
 
-        // create marker on click event
+        // create marker: mouse on click event
         map.on('click', function(e) {  
-            document.getElementById('info').innerHTML =
-            // e.point is the x, y coordinates of the mousemove event relative
-            // to the top-left corner of the map
-            JSON.stringify(e.point) +
-            '<br />' +
-            // e.lngLat is the longitude, latitude geographical position of the event
-            JSON.stringify(e.lngLat.wrap());
 
             // Marker settings
             var marker = new mapboxgl.Marker({
@@ -109,6 +87,11 @@
 
             .setLngLat(e.lngLat)
             .addTo(map);
+           
+            document.getElementById('displayhelp').innerHTML = 
+                    'Select the location you want to report an incident: '
+                    + '<br>' + 'Longitude: ' + e.lngLat.lng + '<br>' + 'Latitude: ' + e.lngLat.lat;
+          
         });
 
         // Geocoder function
@@ -117,10 +100,6 @@
             accessToken: mapboxgl.accessToken,
             mapboxgl: mapboxgl
         }));
-
-    
-        
-
     </script>
 
 </body>
