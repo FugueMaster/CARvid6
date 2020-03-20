@@ -8,6 +8,17 @@
   <title>TRINDS</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
+  
+  <style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+  
+  
+div.a {
+  line-height: 10;
+}
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -53,14 +64,13 @@
           </ul>
 		  </li>
 		  <li><a href="map.html">Map</a></li>
-          <li class="drop-down"><a href="#">Statistics</a>
+          <li class="drop-down"><a href="stat.html">Statistics</a>
                 <ul>
                   <li><a href="#">Overall</a></li>
                   <li><a href="#">Accidents</a></li>
                   <li><a href="#">Breakdowns</a></li>
                   <li><a href="#">Road Works</a></li>
                   <li><a href="#">Heavy Traffic</a></li>
-				  <li><a href="#">Road closures</a></li>
                 </ul>
 		  </li>		
              
@@ -75,23 +85,52 @@
     </div>
   </header><!-- End Header -->
   
+  
+  <main id="main">
+  
+  
+  <!-- ======= Stats Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
 
-  <!---                 Add content here                   ---->
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Statistics</h2>
+          <ol>
+            <li><a href="webpage.html">Home</a></li>
+			<li>Statistics</li>
+          </ol>
+        </div>
 
+      </div>
+    </section><!-- End Contact Section -->
+	
+	
+	
+	<!-- ======= Stats Section ======= -->
+    <section class="stats" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+      <div class="container">
+	
+  
+  <table>
+  
+  <tr>
+    <th>Traffic Update</th>
+    <th>Date/Time</th>
+  </tr>
+  <tr>
+    <td>Heavy Traffic on PIE (towards Changi Airport) after BKE</td>
+    <td>04/03 16:27</td>
+  </tr>
+  <tr>
+    <td>Heavy Traffic on SLE (towards BKE) at Woodlands Ave 12 Exit.</td>
+    <td>04/03 16:53</td>
+  </tr>
+</table>
+
+  </main><!-- End #main -->
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-    <!-- ======= Footer ======= -->
+  <!-- ======= Footer ======= -->
   <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
 
     <div class="footer-top">
@@ -152,7 +191,6 @@
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-  
   
   
   <!-- Vendor JS Files -->
