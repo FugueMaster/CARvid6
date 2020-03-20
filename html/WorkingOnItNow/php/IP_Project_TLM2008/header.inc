@@ -58,14 +58,14 @@
                   <li><a href="#">Breakdowns</a></li>
                   <li><a href="#">Road Works</a></li>
                   <li><a href="#">Heavy Traffic</a></li>
-				  <li><a href="#">Road closures</a></li>
+                  <li><a href="#">Road closures</a></li>
                 </ul>
 		  </li>		
              
           <li class="drop-down"><a href="#">Contact Us</a>
 		       <ul>
 				 <li><a href="faq.html">FAQ</a></li>
-				 <li><a href="entry.html">Submit Entry</a></li>
+				 <li><a href="entry-part1.php">Submit Entry</a></li>
                </ul>
 		  </li>	   
       </nav><!-- .nav-menu -->
