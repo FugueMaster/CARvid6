@@ -1,0 +1,43 @@
+@media screen and (min-width:769px)
+{
+#ContactUs
+{
+    margin-top:-770px;
+    width:85%;
+    margin-left:200px;
+    padding-left:150px;
+
+}
+.Details
+{
+    height:100px;
+    width:100%;
+}
+#Address
+{
+    margin-top:-300px;
+    margin-left:350px;
+    height:100px;
+    float:left;
+}
+
+#Dal
+{
+margin-top:-300px;
+margin-left:550px;
+height:100px;
+float:left;
+}
+
+#Openinghrs
+{
+margin-top:-300px;
+margin-left:750px;
+height:100px;
+float:left;
+}
+}
+
+@media screen and (min-device-width:481px)  and (max-device-width: 768px)
+{
+}
