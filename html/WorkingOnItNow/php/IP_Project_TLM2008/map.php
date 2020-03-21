@@ -2,9 +2,6 @@
 <html lang="n">
      <?php include 'header.inc'?>
   <head>
-    <title>Map</title>
-    <meta name="viewport" content="initial-scale=1.0">
-    <meta charset="utf-8">
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -16,48 +13,14 @@
         height: 100%;
         margin: 0;
         padding: 0;
-      }
+      }s
     </style>
   </head>
   <body>
-    <div id="map"></div>
-	<header id="header" class="fixed-top ">
-	  <div class="container">
-
-	    <div class="logo float-left">
-            <h1 class="text-light"><a href="webpage.html"><span>TRINDS</span></a></h1>
-            <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-	    </div>
-	
-	      <nav class="nav-menu float-right d-none d-lg-block"> <ul>
-          <li class="drop-down"><a href="webpage.html">Home</a>
-		  <ul>
-		    <li><a href="">About Us</a></li>
-          </ul>
-		  </li>
-		  <li><a href="map.html">Map</a></li>
-          <li class="drop-down"><a href="#">Statistics</a>
-                <ul>
-                  <li><a href="#">Overall</a></li>
-                  <li><a href="#">Accidents</a></li>
-                  <li><a href="#">Breakdowns</a></li>
-                  <li><a href="#">Road Works</a></li>
-                  <li><a href="#">Heavy Traffic</a></li>
-                </ul>
-		  </li>		
-             
-          <li class="drop-down">Contact Us
-		       <ul>
-				 <li><a href="#">FAQ</a></li>
-				 <li><a href="contact.html">Submit Entry</a></li>
-               </ul>
-		  </li>	   
-      </nav><!-- .nav-menu -->
-
-    </div>
-  </header><!-- End Header -->
+    <div id="map"></div>	
     <script>
       var map;
+      var infowindow = new google.maps.InfoWindow();
       
       function initMap() {  // initialise map
         map = new google.maps.Map(document.getElementById('map'), {
@@ -66,9 +29,27 @@
         });
         
         // Load GeoJson file
-       //map.data.loadGeoJson(
-            //'https://storage.googleapis.com/mapsdevsite/json/google.json');
+        map.data.loadGeoJson(
+            'assets/geojson/enter_issue.geojson');
+    
+        // Show info window on mouse click event
+        map.data.addListener('click', function(event) {
+            var feat = event.feature;
+            var html = '<b>' + feat.getProperty('iid')+"<br>"
+                        + feat.getProperty('timestamp')+"<br>"
+                        + feat.getProperty('comments')+"<br>"
+                        + feat.getProperty('type')+"<br>"
+                        + feat.getProperty('location')+"<br>"
+                        + feat.getProperty('pid')+"</b>";
+            infowindow.setContent("<div style='width:150px; text-align: center;'>"+html+"</div>");
+            infowindow.setPosition(feat.getGeometry().get());
+            infowindow.setOption({pixelOffset: new google.maps.Size(0,-34)});
+            infowindow.open(map);
+        });
       }
+      
+      google.maps.event.addDomListener(window,'load', initMap);
+      
     </script>
     
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBf8sdRfN_rf0iZCeAZ5qCTSBkmHlCbmVE&callback=initMap"
