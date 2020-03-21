@@ -178,7 +178,7 @@
             container: 'map', // container id
             style: 'mapbox://styles/fuguemaster/ck7ho8svq54td1ip8d8w18vmt', // stylesheet location
             center: [103.8198, 1.3521], // starting position [lng, lat], Singapore
-            zoom: 14, // starting zoom
+            zoom: 12, // starting zoom
             maxBounds: bounds // Sets bounds as max
         });
     

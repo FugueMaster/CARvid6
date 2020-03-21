@@ -50,7 +50,7 @@
 		    <li><a href="about.html">About Us</a></li>
           </ul>
 		  </li>
-		  <li><a href="map.html">Map</a></li>
+		  <li><a href="map.php">Map</a></li>
           <li class="drop-down"><a href="#">Statistics</a>
                 <ul>
                   <li><a href="#">Overall</a></li>
@@ -64,7 +64,7 @@
              
           <li class="drop-down"><a href="#">Contact Us</a>
 		       <ul>
-				 <li><a href="faq.html">FAQ</a></li>
+				 <li><a href="faq.php">FAQ</a></li>
 				 <li><a href="entry-part1.php">Submit Entry</a></li>
                </ul>
 		  </li>	   

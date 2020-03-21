@@ -58,13 +58,15 @@
   </header><!-- End Header -->
     <script>
       var map;
-      function initMap() {
+      
+      function initMap() {  // initialise map
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 1.3521, lng: 103.8198},
-          zoom: 10
+          zoom: 12
         });
       }
     </script>
+    
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBf8sdRfN_rf0iZCeAZ5qCTSBkmHlCbmVE&callback=initMap"
     async defer></script>
      <?php include 'footer.inc'?>
