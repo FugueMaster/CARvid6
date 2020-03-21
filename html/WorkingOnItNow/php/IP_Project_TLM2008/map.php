@@ -64,6 +64,10 @@
           center: {lat: 1.3521, lng: 103.8198},
           zoom: 12
         });
+        
+        // Load GeoJson file
+       //map.data.loadGeoJson(
+            //'https://storage.googleapis.com/mapsdevsite/json/google.json');
       }
     </script>
     
