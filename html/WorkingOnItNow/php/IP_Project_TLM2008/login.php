@@ -1,22 +1,27 @@
+<?php
+{
+session_start();
+session_unset();
+session_destroy();
+}
+?>
 <!DOCTYPE html>
-<html lang="en">
-<?php include 'header.inc'?>
-  
-
-  <section id="loginsection">
-        <form id="login"  method="#">
+<html>
+     <?php include 'header.inc'?>
+        <section id="loginsection">
+        <form id="login"  method="post" action="check_login.php">
         <h3>Login Page</h3>
-        LoginID or Email Address*<br><input type="text" name="LoginID" size="80" style="height:20px;" ><br><br>
-        Password*<br><input type="text" name="passwd" size="60" style="height:20px;"/><br><br><br>
-         <input type="button" value="LOGIN" style="height:20px; font-size:16px;"/>
+        LoginID*<br><input type="text" name="id" id="mail" size="80" style="height:20px;" ><br><br>
+        Password*<br><input type="text" name="passwd" id="passwd" size="60" style="height:20px;"/><br><br><br>
+         <input type="submit" name="submit" value="LOGIN" style="height:20px; font-size:16px;"/>
          <p>Forgotten your password?</p>
-        
+         <?php if(isset($_GET['error'])) echo "<b>Invalid username or password</b>";?>
         </form>
         </section>
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-</body>
-<?php include 'footer.inc'?>
-</html>	
+    </body>
+
+     <?php include 'footer.inc'?>
+</html>
 <?php
 
 /* 

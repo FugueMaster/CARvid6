@@ -6,8 +6,8 @@ and open the template in the editor.
 -->
 <html lang="en">
  <?php include 'header.inc'?>
- 
-    <!-- ======= Hero Section ======= -->
+  
+  <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex justify-content-center align-items-center">
     <div id="heroCarousel" class="container carousel carousel-fade" data-ride="carousel">
 
@@ -50,7 +50,10 @@ and open the template in the editor.
       </a>
 
     </div>
-    </section><!-- End Hero -->
+  </section><!-- End Hero -->
+</body>
+
+</html>	
   
 	<?php include 'footer.inc'?>
   </body>
