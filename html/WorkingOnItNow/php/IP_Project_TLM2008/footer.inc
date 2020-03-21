@@ -49,6 +49,8 @@
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        <br />
+        Created my free logo at <a href="https://logomakr.com/">LogoMakr.com</a>
       </div>
     </div>
     
