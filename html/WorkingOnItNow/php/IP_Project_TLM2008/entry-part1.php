@@ -178,23 +178,18 @@
             container: 'map', // container id
             style: 'mapbox://styles/fuguemaster/ck7ho8svq54td1ip8d8w18vmt', // stylesheet location
             center: [103.8198, 1.3521], // starting position [lng, lat], Singapore
-
             zoom: 12, // starting zoom
-
             maxBounds: bounds // Sets bounds as max
         });
     
-
-        // create marker: mouse on click event
-        map.on('click', function(e) {  
-
-            // Marker settings
-            var marker = new mapboxgl.Marker({
+        // Marker settings
+        var marker = new mapboxgl.Marker({
             draggable: false
             })
-
-            .setLngLat(e.lngLat)
-            .addTo(map);
+        // create marker: mouse on click event
+        map.on('click', function(e) {  
+            marker.setLngLat(e.lngLat)
+            marker.addTo(map);
            
             document.getElementById('displayhelp').innerHTML = 
                     'Select the location you want to report an incident: '
