@@ -39,7 +39,7 @@
 	  <div class="container">
 
 	    <div class="logo float-left">
-            <h1 class="text-light"><a href="webpage.html"><span>TRINDS</span></a></h1>
+            <h1 class="text-light"><a href="index.php"><span>TRINDS</span></a></h1>
             <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 	    </div>
 	
@@ -66,9 +66,10 @@
 				 <li><a href="faq.php">FAQ</a></li>
 				 <li><a href="entry.php">Submit Entry</a></li>
                        </ul>  
-                    <ul>
-		    <li><a href="login.php">Login</a></li>
-                    </ul></li>
+                    </li>
+                    
+                    <li class="drop-down"><a href="login.php">Login</a></li>
+                    
       </nav><!-- .nav-menu -->
 
     </div>

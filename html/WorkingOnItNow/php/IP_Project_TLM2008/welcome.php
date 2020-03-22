@@ -1,12 +1,10 @@
-<?php 
+<?php
 	session_start();
-		
-	if(!isset($_SESSION))
+	if (!isset($_SESSION['MM_Username']))
 	{
-		header('location:index.php');
-		exit;
-	}
-	
+	header("Location:login.php");
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -79,10 +77,11 @@
 				 <li><a href="faq.php">FAQ</a></li>
 				 <li><a href="entry.php">Submit Entry</a></li>
                </ul>
+             
 		  </li>	   
-                    <ul>
-		    <li><a href="logout.php">Log Out</a></li>
-          </ul>
+                     
+                         <li class="drop-down"><a href="logout.php">Log Out</a></li>
+          
       </nav><!-- .nav-menu -->
 
     </div>
