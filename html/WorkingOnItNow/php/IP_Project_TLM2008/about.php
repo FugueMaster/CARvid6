@@ -41,8 +41,8 @@ and open the template in the editor.
               <li><i class="icofont-check-circled"></i> Accidents</li>
               <li><i class="icofont-check-circled"></i> Breakdowns</li>
               <li><i class="icofont-check-circled"></i> Road works</li>
-			  <li><i class="icofont-check-circled"></i> Heavy Traffic</li>
-			  <li><i class="icofont-check-circled"></i> Road closures</li>
+	      <li><i class="icofont-check-circled"></i> Heavy Traffic</li>
+	      <li><i class="icofont-check-circled"></i> Road closures</li>
             </ul>
           </div>
         </div>

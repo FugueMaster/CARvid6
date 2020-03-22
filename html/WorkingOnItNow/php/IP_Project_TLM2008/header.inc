@@ -5,7 +5,6 @@
   <title>TRINDS</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
-
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -53,12 +52,12 @@
 		  <li><a href="mapbox.php">Map</a></li>
           <li class="drop-down"><a href="#">Statistics</a>
                 <ul>
-                  <li><a href="#">Overall</a></li>
-                  <li><a href="#">Accidents</a></li>
-                  <li><a href="#">Breakdowns</a></li>
-                  <li><a href="#">Road Works</a></li>
-                  <li><a href="#">Heavy Traffic</a></li>
-				  <li><a href="#">Road closures</a></li>
+                  <li><a href="overall.php">Overall</a></li>
+                  <li><a href="accidents.php">Accidents</a></li>
+                  <li><a href="breakdown.php">Breakdowns</a></li>
+                  <li><a href="roadworks.php">Road Works</a></li>
+                  <li><a href="heavytraffic.php">Heavy Traffic</a></li>
+	          <li><a href="roadclosures.php">Road closures</a></li>
                 </ul>
 		  </li>		
              
@@ -66,18 +65,14 @@
 		       <ul>
 				 <li><a href="faq.php">FAQ</a></li>
 				 <li><a href="entry.php">Submit Entry</a></li>
-               </ul>
-		  </li>	   
+                       </ul>  
                     <ul>
-		    <li><?php if(!isset($_SESSION['MM_Username'])) 
-                    echo '<a href="login.php">Login</a>'; 
-                    else echo '<a href="logout.php">Log Out</a>'; ?></li>
-          </ul>
+		    <li><a href="login.php">Login</a></li>
+                    </ul></li>
       </nav><!-- .nav-menu -->
 
     </div>
   </header><!-- End Header -->
-  
 
 <?php
 
