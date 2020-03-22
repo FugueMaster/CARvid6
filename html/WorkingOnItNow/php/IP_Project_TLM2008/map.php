@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="n">
+
+<html lang="en">
+
      <?php include 'header.inc'?>
   <head>
     <style>
@@ -14,6 +16,7 @@
         margin: 0;
         padding: 0;
       }
+
       #info-box {
         background-color: transparent;
         border: 1px solid black;
@@ -25,10 +28,12 @@
         left: 30px;
         font-size: 10px;
       }
+
     </style>
   </head>
   <body>
     <div id="map"></div>
+
     <div id="info-box"></div>	
     <script>
       var map;
@@ -36,10 +41,12 @@
       features = [];
       
       function initMap() {  // initialise map
+
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 1.3521, lng: 103.8198},
           zoom: 12
         });
+
         map.data.setStyle(function(feature) {
           return {icon:feature.getProperty('icon')};
         });
@@ -77,4 +84,5 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 

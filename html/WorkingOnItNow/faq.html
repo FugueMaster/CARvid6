@@ -5,7 +5,9 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>About - Moderna Bootstrap Template</title>
+
+  <title>TRINDS</title>
+
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -26,6 +28,16 @@
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+
+  
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+
+  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  
+  
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -54,13 +66,16 @@
           </ul>
 		  </li>
 		  <li><a href="map.html">Map</a></li>
-          <li class="drop-down"><a href="stat.html">Statistics</a>
+      <li class="drop-down"><a href="#">Statistics</a>
+
                 <ul>
                   <li><a href="#">Overall</a></li>
                   <li><a href="#">Accidents</a></li>
                   <li><a href="#">Breakdowns</a></li>
                   <li><a href="#">Road Works</a></li>
                   <li><a href="#">Heavy Traffic</a></li>
+                  <li><a href="#">Road closures</a></li>
+
                 </ul>
 		  </li>		
              
@@ -93,6 +108,89 @@
 
       </div> 
    </section><!-- End Contact Section -->
+
+
+   <!-- Bootstrap FAQ - START -->
+   <div class="container">
+	<br />
+   
+   <div class="panel-group" id="accordion">
+        <div class="faqHeader">General questions</div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Is account registration required?</a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse ">
+                <div class="panel-body">
+                    Account registration at <strong>TRINDS</strong> is only required if you are an employee for TRINDS. 
+                    Public can access this service platform for free.
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">How do I get updated traffic news from TRINDS?</a>
+                </h4>
+            </div>
+            <div id="collapseTen" class="panel-collapse collapse">
+                <div class="panel-body">
+                    Traffic information are submitted by the public. Users can view updated traffic news from <strong>Home>>Map</strong> or submit an entry via <strong>Home>>Submit Entry</strong>.    
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">I have a piece of latest traffic news.How do I submit to TRINDS?</a>
+                </h4>
+            </div>
+            <div id="collapseEleven" class="panel-collapse collapse">
+                <div class="panel-body">
+                    Users can submit an entry via <strong>Home>>Submit Entry</strong> when they have news about the latest vehicle breakdowns,accidents,road works or heavy traffic.
+                </div>
+            </div>
+        </div>
+   
+	<br />
+	<br />
+	<br />
+	
+	<style>
+    .faqHeader {
+        font-size: 27px;
+        margin: 20px;
+    }
+
+    .panel-heading [data-toggle="collapse"]:after {
+        font-family: 'Glyphicons Halflings';
+        content: "\e072"; /* "play" icon */
+        float: right;
+        color: #F58723;
+        font-size: 18px;
+        line-height: 22px;
+        /* rotate "play" icon from > (right arrow) to down arrow */
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+
+    .panel-heading [data-toggle="collapse"].collapsed:after {
+        /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        color: #454444;
+    }
+	</style>
+   
+   <!-- Bootstrap FAQ - END -->
 
    </main><!-- End #main -->
    

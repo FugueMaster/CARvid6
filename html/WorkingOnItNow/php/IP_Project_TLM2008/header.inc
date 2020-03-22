@@ -37,18 +37,21 @@
 
    <!-- ======= Header ======= -->
    <header id="header" class="fixed-top ">
-	  <div class="container">
 
-	    <div class="logo float-left">
-            <h1 class="text-light"><a href="webpage.html"><span>TRINDS</span></a></h1>
-            <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-	    </div>
+        <div class="container">
+
+	<div class="logo float-left">
+            <a href="index.php"><img src="assets/img/logo.png" alt="logo"></a>      <!-- TRINDS logo-->            
+            <!--<h1 class="text-light"><a href="index.php"><span>TRINDS</span></a></h1> !-->
+	</div>
 	
-	      <nav class="nav-menu float-right d-none d-lg-block"> <ul>
-          <li class="drop-down"><a href="webpage.html">Home</a>
-		  <ul>
-		    <li><a href="about.html">About Us</a></li>
-          </ul>
+        <!-- Start of nav-menu -->
+        <nav class="nav-menu float-right d-none d-lg-block"> <ul>
+            <li class="drop-down"><a href="index.php">Home</a>
+                <ul>
+		    <li><a href="about.php">About Us</a></li>
+                </ul>
+
 		  </li>
 		  <li><a href="map.php">Map</a></li>
           <li class="drop-down"><a href="#">Statistics</a>
@@ -63,22 +66,17 @@
 		  </li>		
              
           <li class="drop-down"><a href="#">Contact Us</a>
-		       <ul>
-				 <li><a href="faq.php">FAQ</a></li>
-				 <li><a href="entry-part1.php">Submit Entry</a></li>
-               </ul>
-		  </li>	   
-      </nav><!-- .nav-menu -->
+
+		 <ul>
+                    <li><a href="faq.php">FAQ</a></li>
+                    <li><a href="entry-part1.php">Submit Entry</a></li>
+                 </ul>
+          </li>	   
+      </nav>    <!--End of nav-menu -->
 
     </div>
-  </header><!-- End Header -->
+  </header>     <!-- End Header -->
   
+</body>
 
-<?php
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
