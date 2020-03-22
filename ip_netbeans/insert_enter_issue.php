@@ -6,10 +6,10 @@ Date(yyyy-mm:dd)<input type="text" name="date" /><br><br>
     <option value="accident">Accident</option>
     <option value="breakdown">Breakdown</option>
     <option value="heavy traffic">Heavy Traffic</option>
-    <option value="accident">Accident</option>
+    <option value="closure">Closure</option>
+    <option value="roadworks">Roadworks</option>
 </select>
-<input type="radio"
-PID : <input type="text" name="pid" /><br><br>
+ : <input type="text" name="pid" /><br><br>
 Location: <input type="text" name="location" /><br><br>
 <input type="submit" />
 
