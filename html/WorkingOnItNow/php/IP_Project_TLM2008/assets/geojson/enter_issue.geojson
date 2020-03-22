@@ -13,7 +13,8 @@
     "comments":"",
     "type":"Accident",
     "location":"Clementi Ave 3",
-    "pid":1
+    "pid":1,
+    "icon":"assets/geojson/accident.jpg"
     }
   },
   {
@@ -28,7 +29,8 @@
     "comments":"",
     "type":"Road Closure",
     "location":"Serangoon Ave 1",
-    "pid":6
+    "pid":6,
+    "icon":"assets/geojson/road-closure.png"
     }
   },
   {
@@ -43,7 +45,8 @@
     "comments":"",
     "type":"Roadworks",
     "location":"Woodlands Ring Rd",
-    "pid":5
+    "pid":5,
+    "icon":"assets/geojson/roadworks.jpg"
     }
   },
   {
@@ -58,7 +61,8 @@
     "comments":"",
     "type":"Breakdown",
     "location":"7 Sungei Kadut Street 3",
-    "pid":4
+    "pid":4,
+    "icon":"assets/geojson/breakdown.png"
     }
   },
   {
@@ -73,7 +77,8 @@
     "comments":"",
     "type":"Heavy traffic",
     "location":"BKE",
-    "pid":3
+    "pid":3,
+    "icon":"assets/geojson/heavytraffic.png"
     }
   },
   {
@@ -88,7 +93,8 @@
     "comments":"",
     "type":"Road Closure",
     "location":"Upper Bukit Timah Road",
-    "pid":10
+    "pid":10,
+    "icon":"assets/geojson/road-closure.png"
     }
   },
   {
@@ -103,7 +109,8 @@
     "comments":"",
     "type":"Breakdown",
     "location":"Ayer Rajah Crescent",
-    "pid":12
+    "pid":12,
+    "icon":"assets/geojson/breakdown.png"
     }
   },
   {
@@ -118,7 +125,8 @@
     "comments":"",
     "type":"Breakdown",
     "location":"Bukit Batok East Ave 2",
-    "pid":8
+    "pid":8,
+    "icon":"assets/geojson/breakdown.png"
     }
   },
   {
@@ -133,7 +141,8 @@
     "comments":"",
     "type":"Accident",
     "location":"Hougang Ave 3",
-    "pid":2
+    "pid":2,
+    "icon":"assets/geojson/accident.jpg"
     }
   },
   {
@@ -148,7 +157,8 @@
     "comments":"",
     "type":"Road Closure",
     "location":"Bartley Rd East",
-    "pid":11
+    "pid":11,
+    "icon":"assets/geojson/road-closure.png"
     }
   },
   {
@@ -163,7 +173,8 @@
     "comments":"",
     "type":"Heavy traffic",
     "location":"Sims Avenue",
-    "pid":5
+    "pid":5,
+    "icon":"assets/geojson/heavytraffic.png"
     }
   },
   {
@@ -178,7 +189,8 @@
     "comments":"",
     "type":"Breakdown",
     "location":"Marine Parade Rd",
-    "pid":4
+    "pid":4,
+    "icon":"assets/geojson/breakdown.png"
     }
   },
   {
@@ -193,7 +205,8 @@
     "comments":"",
     "type":"Heavy traffic",
     "location":"Dunearn Rd",
-    "pid":9
+    "pid":9,
+    "icon":"assets/geojson/heavytraffic.png"
     }
   },
   {
@@ -208,7 +221,8 @@
     "comments":"",
     "type":"Accident",
     "location":"Newton Flyover",
-    "pid":7
+    "pid":7,
+    "icon":"assets/geojson/accident.jpg"
     }
   },
   {
@@ -223,7 +237,8 @@
     "comments":"",
     "type":"Breakdown",
     "location":"Holland Road",
-    "pid":3
+    "pid":3,
+    "icon":"assets/geojson/breakdown.png"
     }
   },
   {
@@ -238,7 +253,8 @@
     "comments":"",
     "type":"Heavy traffic",
     "location":"Holland Road",
-    "pid":10
+    "pid":10,
+    "icon":"assets/geojson/heavytraffic.png"
     }
   },
   {
@@ -253,7 +269,8 @@
     "comments":"",
     "type":"Roadworks",
     "location":"Farrer Road",
-    "pid":5
+    "pid":5,
+    "icon":"assets/geojson/roadworks.jpg"
     }
   },
   {
@@ -268,7 +285,8 @@
     "comments":"",
     "type":"Breakdown",
     "location":"Eng Neo Avenue",
-    "pid":8
+    "pid":8,
+    "icon":"assets/geojson/breakdown.png"
     }
   },
   {
@@ -283,7 +301,8 @@
     "comments":"",
     "type":"Roadworks",
     "location":"Petir Road",
-    "pid":3
+    "pid":3,
+    "icon":"assets/geojson/roadworks.jpg"
     }
   },
   {
@@ -298,7 +317,8 @@
     "comments":"",
     "type":"Breakdown",
     "location":"PIE",
-    "pid":2
+    "pid":2,
+    "icon":"assets/geojson/breakdown.png"
     }
   },
   {
@@ -313,7 +333,8 @@
     "comments":"",
     "type":"Accident",
     "location":"Admiralty Road West",
-    "pid":12
+    "pid":12,
+    "icon":"assets/geojson/accident.jpg"
     }
   },
   {
@@ -328,7 +349,8 @@
     "comments":"",
     "type":"Roadworks",
     "location":"Mandai Avenue",
-    "pid":10
+    "pid":10,
+    "icon":"assets/geojson/roadworks.jpg"
     }
   },
   {
@@ -343,7 +365,8 @@
     "comments":"",
     "type":"Breakdown",
     "location":"Upper Thomson Road",
-    "pid":11
+    "pid":11,
+    "icon":"assets/geojson/breakdown.png"
     }
   },
   {
@@ -358,7 +381,8 @@
     "comments":"",
     "type":"Roadworks",
     "location":"Ang Mo Kio Avenue 8",
-    "pid":4
+    "pid":4,
+    "icon":"assets/geojson/roadworks.jpg"
     }
   },
   {
@@ -373,7 +397,8 @@
     "comments":"",
     "type":"Accident",
     "location":"Marymount Road",
-    "pid":1
+    "pid":1,
+    "icon":"assets/geojson/accident.jpg"
     }
   },
   {
@@ -388,7 +413,8 @@
     "comments":"",
     "type":"Breakdown",
     "location":"Macpherson Road",
-    "pid":9
+    "pid":9,
+    "icon":"assets/geojson/breakdown.png"
     }
   },
   {
@@ -403,7 +429,8 @@
     "comments":"",
     "type":"Heavy traffic",
     "location":"Kallang Road",
-    "pid":4
+    "pid":4,
+    "icon":"assets/geojson/heavytraffic.png"
     }
   },
   {
@@ -418,7 +445,8 @@
     "comments":"",
     "type":"Roadworks",
     "location":"Hill Street",
-    "pid":2
+    "pid":2,
+    "icon":"assets/geojson/roadworks.jpg"
     }
   },
   {
@@ -433,7 +461,8 @@
     "comments":"",
     "type":"Heavy traffic",
     "location":"River Valley Road",
-    "pid":6
+    "pid":6,
+    "icon":"assets/geojson/heavytraffic.png"
     }
   },
   {
@@ -448,7 +477,8 @@
     "comments":"",
     "type":"Road Closure",
     "location":"Tanglin Road",
-    "pid":8
+    "pid":8,
+    "icon":"assets/geojson/road-closure.png"
     }
   },
   {
@@ -463,7 +493,8 @@
     "comments":"",
     "type":"Roadworks",
     "location":"Stevens Road",
-    "pid":1
+    "pid":1,
+    "icon":"assets/geojson/roadworks.jpg"
     }
   },
   {
@@ -478,7 +509,8 @@
     "comments":"",
     "type":"Heavy traffic",
     "location":"Lornie Highway",
-    "pid":11
+    "pid":11,
+    "icon":"assets/geojson/heavytraffic.png"
     }
   },
   {
@@ -493,7 +525,8 @@
     "comments":"",
     "type":"Heavy traffic",
     "location":"CTE",
-    "pid":6
+    "pid":6,
+    "icon":"assets/geojson/heavytraffic.png"
     }
   },
   {
@@ -508,7 +541,8 @@
     "comments":"",
     "type":"Road Closure",
     "location":"Coronation Road West",
-    "pid":8
+    "pid":8,
+    "icon":"assets/geojson/road-closure.png"
     }
   },
   {
@@ -523,7 +557,8 @@
     "comments":"",
     "type":"Roadworks",
     "location":"Ulu Pandan Road",
-    "pid":7
+    "pid":7,
+    "icon":"assets/geojson/roadworks.jpg"
     }
   },
   {
@@ -538,7 +573,8 @@
     "comments":"",
     "type":"Breakdown",
     "location":"Clementi Road",
-    "pid":9
+    "pid":9,
+    "icon":"assets/geojson/breakdown.png"
     }
   },
   {
@@ -553,7 +589,8 @@
     "comments":"",
     "type":"Roadworks",
     "location":"West Coast Highway",
-    "pid":6
+    "pid":6,
+    "icon":"assets/geojson/roadworks.jpg"
     }
   },
   {
@@ -568,7 +605,8 @@
     "comments":"",
     "type":"Road Closure",
     "location":"Choa Chu Kang Drive",
-    "pid":3
+    "pid":3,
+    "icon":"assets/geojson/road-closure.png"
     }
   },
   {
@@ -583,7 +621,8 @@
     "comments":"",
     "type":"Roadworks",
     "location":"Teck Whye Avenue",
-    "pid":1
+    "pid":1,
+    "icon":"assets/geojson/roadworks.jpg"
     }
   },
   {
@@ -598,7 +637,8 @@
     "comments":"",
     "type":"Heavy traffic",
     "location":"BKE",
-    "pid":5
+    "pid":5,
+    "icon":"assets/geojson/heavytraffic.png"
     }
   },
   {
@@ -613,7 +653,8 @@
     "comments":"",
     "type":"Road Closure",
     "location":"Dairy Farm Road",
-    "pid":9
+    "pid":9,
+    "icon":"assets/geojson/road-closure.png"
     }
   },
   {
@@ -628,7 +669,8 @@
     "comments":"",
     "type":"Road Closure",
     "location":"Toh Tuck Flyover",
-    "pid":11
+    "pid":11,
+    "icon":"assets/geojson/road-closure.png"
     }
   },
   {
@@ -643,7 +685,8 @@
     "comments":"",
     "type":"Heavy traffic",
     "location":"AYE",
-    "pid":12
+    "pid":12,
+    "icon":"assets/geojson/heavytraffic.png"
     }
   },
   {
@@ -658,7 +701,8 @@
     "comments":"",
     "type":"Heavy traffic",
     "location":"Canberra Road",
-    "pid":3
+    "pid":3,
+    "icon":"assets/geojson/heavytraffic.png"
     }
   },
   {
@@ -673,7 +717,8 @@
     "comments":"",
     "type":"Heavy traffic",
     "location":"Sembawang Way",
-    "pid":6
+    "pid":6,
+    "icon":"assets/geojson/heavytraffic.png"
     }
   },
   {
@@ -688,7 +733,8 @@
     "comments":"",
     "type":"Road Closure",
     "location":"Woodlands Avenue 9",
-    "pid":4
+    "pid":4,
+    "icon":"assets/geojson/road-closure.png"
     }
   },
   {
@@ -703,7 +749,8 @@
     "comments":"",
     "type":"Heavy traffic",
     "location":"Turf Club Avenue",
-    "pid":5
+    "pid":5,
+    "icon":"assets/geojson/heavytraffic.png"
     }
   },
   {
@@ -718,7 +765,8 @@
     "comments":"",
     "type":"Heavy traffic",
     "location":"Bukit Panjang Road",
-    "pid":9
+    "pid":9,
+    "icon":"assets/geojson/heavytraffic.png"
     }
   },
   {
@@ -733,7 +781,8 @@
     "comments":"",
     "type":"Road Closure",
     "location":"Brickland Road",
-    "pid":3
+    "pid":3,
+    "icon":"assets/geojson/road-closure.png"
     }
   },
   {
@@ -748,7 +797,8 @@
     "comments":"",
     "type":"Road Closure",
     "location":"Jalan Boon Lay",
-    "pid":1
+    "pid":1,
+    "icon":"assets/geojson/road-closure.png"
     }
   }
 ]
