@@ -6,6 +6,7 @@ and open the template in the editor.
 -->
 <html lang="en">
  <?php include 'header.inc'?>
+
     
   <body>
         <!-- ======= Hero Section ======= -->
@@ -56,4 +57,5 @@ and open the template in the editor.
  <?php include 'footer.inc'?>
         
   </body>
+
 </html>

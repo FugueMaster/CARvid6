@@ -1,11 +1,14 @@
 <!-- ======= Footer ======= -->
-<footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
 
     <div class="footer-top">
       <div class="container">
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-links">
+
                 <h4>Useful Links</h4>
                 <ul>
                     <li><i class="bx bx-chevron-right"></i> <a href="index.php">Home</a></li>
@@ -33,6 +36,7 @@
                 <a href="https://www.facebook.com/SingaporeTech/" class="facebook"><i class="bx bxl-facebook"></i></a>
                 <a href="https://www.instagram.com/singaporetech/" class="instagram"><i class="bx bxl-instagram"></i></a>
                 </div>
+
           </div>
 
         </div>
@@ -49,6 +53,7 @@
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+
         <br />
         Created my free logo at <a href="https://logomakr.com/">LogoMakr.com</a>
       </div>
@@ -70,3 +75,4 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
