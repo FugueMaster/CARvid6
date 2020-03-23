@@ -1,3 +1,8 @@
+<p id ="demo">
+  <script>
+  document.getElementById("demo").innerHTML =Date();
+</script>
+</p>
 <!-- ======= Footer ======= -->
   <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
 
@@ -79,4 +84,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
+
 

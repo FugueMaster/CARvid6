@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 /* 
  * To change this license header, choose License Headers in Project Properties.
@@ -16,7 +15,7 @@
 	
 ?>
 <html lang="en">
- <?php include 'header3.inc'?>
+ <?php include 'header.inc'?>
   
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex justify-content-center align-items-center">
@@ -70,3 +69,5 @@
   </body>
 
 </html>
+
+

@@ -1,11 +1,11 @@
 <?php
-$e = $_POST['id'] ;  // name of the input field is â€™usernameâ€™
-$p = $_POST['passwd'];
+$e = $_POST['adid'] ;  // name of the input field is â€™usernameâ€™
+$p = $_POST['pass_'];
 
 $conn=mysqli_connect("localhost","root","","ip_schema");
 
 
-$sql="SELECT*FROM person WHERE pid='$e' and pass='$p'";
+$sql="SELECT*FROM admin WHERE aid='$e' and passw='$p'";
 $search_result=mysqli_query($conn,$sql);    // search table NOW!
 
 
@@ -16,7 +16,7 @@ if($userfound>=1)
 	{
 
 	session_start();
-	$_SESSION['MM_Username']=$e;
+	$_SESSION['Username']=$e;
     header("Location:welcome.php");
 	}
 	

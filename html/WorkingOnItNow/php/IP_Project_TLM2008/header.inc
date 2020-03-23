@@ -44,7 +44,7 @@
 	    </div>
 	
 	      <nav class="nav-menu float-right d-none d-lg-block"> <ul>
-          <li class="drop-down"><a href="index.php">Home</a>
+          <li class="drop-down"><a href="welcome_user.php">Home</a>
 		  <ul>
 		    <li><a href="about_user.php">About Us</a></li>
           </ul>
@@ -64,11 +64,11 @@
                   <li class="drop-down"><a href="contact_user.php">Contact Us</a>
 		       <ul>
 				 <li><a href="faq_user.php">FAQ</a></li>
-				 <li><a href="entry.php">Submit Entry</a></li>
+                                 <li><a href="entry-part1_user.php">Submit Entry</a></li>
                        </ul>  
                     </li>
                     
-                    <li class="drop-down"><a href="login.php">Login</a></li>
+                    <li class="drop-down"><a href="logout_user.php">Logout</a></li>
                     
       </nav><!-- .nav-menu -->
 

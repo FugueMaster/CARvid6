@@ -10,14 +10,13 @@ and open the template in the editor.
 		
 	if(!isset($_SESSION))
 	{
-		header('location:login.php');
+		header('location:login_user.php');
 		exit;
 	}
 	
 ?>
 <html lang="en">
- <?php include 'header.inc'?>
-  
+ <?php include 'header3.inc'?>
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex justify-content-center align-items-center">
     <div id="heroCarousel" class="container carousel carousel-fade" data-ride="carousel">
@@ -61,12 +60,14 @@ and open the template in the editor.
       </a>
 
     </div>
-  </section><!-- End Hero -->
-</body>
+      
 
-</html>	
+
+  </section><!-- End Hero -->
+  
   
 	<?php include 'footer.inc'?>
   </body>
 
 </html>
+

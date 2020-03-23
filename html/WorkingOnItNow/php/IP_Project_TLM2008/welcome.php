@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	if (!isset($_SESSION['MM_Username']))
+	if (!isset($_SESSION['Username']))
 	{
 	header("Location:login.php");
     }

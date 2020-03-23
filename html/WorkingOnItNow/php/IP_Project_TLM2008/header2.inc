@@ -65,7 +65,7 @@
           <li class="drop-down"><a href="#">Contact Us</a>
 		       <ul>
 				 <li><a href="faq_admin.php">FAQ</a></li>
-				 <li><a href="entry.php">Submit Entry</a></li>
+                                 <li><a href="entry-part1_admin.php">Submit Entry</a></li>
                </ul>
              
 		  </li>	   

@@ -17,12 +17,12 @@ session_destroy();
         </style>
         
         <body>
-     <?php include 'header.inc'?>
+     <?php include 'header3.inc'?>
         <section id="loginsection">
         <form id="login"  method="post" action="check_login.php">
         <h3>Login Page</h3>
-        <b>LoginID</b><br><input type="text" name="id" id="id" size="30" style="height:20px;" ><br><br>
-        <b>Password</b><br><input type="text" name="passwd" id="passwd" size="30" style="height:20px;"/><br><br><br>
+        <b>LoginID</b><br><input type="text" name="adid" id="id" size="30" style="height:20px;" ><br><br>
+        <b>Password</b><br><input type="text" name="pass_" id="passwd" size="30" style="height:20px;"/><br><br><br>
          <input type="submit" name="submit" value="Login"/>
          <p>Forgotten your password?</p>
          <?php if(isset($_GET['error'])) echo "<b>Invalid username or password</b>";?>
@@ -39,4 +39,6 @@ session_destroy();
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
+
 

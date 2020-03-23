@@ -39,17 +39,17 @@
 	  <div class="container">
 
 	    <div class="logo float-left">
-            <a href="login.php"><img src="assets/img/logo.png" alt="logo"></a>      <!-- TRINDS logo-->            
+            <a href="login_user.php"><img src="assets/img/logo.png" alt="logo"></a>      <!-- TRINDS logo-->            
             <!--<h1 class="text-light"><a href="index.php"><span>TRINDS</span></a></h1> !-->
 	    </div>
 	
 	      <nav class="nav-menu float-right d-none d-lg-block"> <ul>
-                <li><a href="login.php">Home</a></li>
-		<li><a href="login.php">About Us</a></li>
-                <li><a href="login.php">Map</a></li>
-                <li><a href="login.php">Statistics</a></li>
-                <li><a href="login.php">Contact Us</a></li>    
-		<li class="drop-down"><a href="login.php">Login</a>
+                <li><a href="login_user.php">Home</a></li>
+		<li><a href="login_user.php">About Us</a></li>
+                <li><a href="login_user.php">Map</a></li>
+                <li><a href="login_user.php">Statistics</a></li>
+                <li><a href="login_user.php">Contact Us</a></li>    
+		<li class="drop-down"><a href="#">Login</a>
                     <ul>
                         <li><a href="login.php">Login as admin</a></li>
                         <li><a href="login_user.php">Login as user</a></li>
