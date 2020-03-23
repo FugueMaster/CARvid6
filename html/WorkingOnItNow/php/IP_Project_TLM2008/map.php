@@ -37,6 +37,7 @@
     <div id="info-box"></div>	
     <script>
       var map;
+      var geojson;
       //var infowindow = new google.maps.InfoWindow();
       features = [];
       
