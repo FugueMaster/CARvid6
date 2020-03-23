@@ -1,3 +1,4 @@
+
 <html lang="en">
     <?php include 'header.inc'?>'
     <head>
@@ -46,25 +47,31 @@
     <body>
         <main id="main">
         <!-- ======= Sub-Header Section ======= -->
+
+
     <section class="breadcrumbs">
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
           <h2>FAQ</h2>
           <ol>
-            <li><a href="index.php">Home</a></li>
+
+              <li><a href="webpage.php">Home</a></li>
+
             <li>Contact Us</li>
             <li>FAQ</li>
           </ol>
         </div>
 
       </div> 
+
    </section><!-- End Sub-Header Section -->
    
   
    <!-- Bootstrap FAQ - START -->
    <div class="container">
    <br/>
+
    
    <div class="panel-group" id="accordion">
         <div class="faqHeader">General questions</div>
@@ -80,7 +87,9 @@
                     Public can access this service platform for free.
                 </div>
             </div>
+
             <br>
+
         </div>
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -94,7 +103,9 @@
                 </div>
             </div>
         </div>
+
             <br>
+
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
@@ -116,3 +127,4 @@
     <?php include 'footer.inc'?>
     </body>    
 </html>  
+

@@ -38,6 +38,7 @@
    <!-- ======= Header ======= -->
    <header id="header" class="fixed-top ">
 
+
         <div class="container">
 
 	<div class="logo float-left">
@@ -54,6 +55,7 @@
 
 		  </li>
 		  <li><a href="map.php">Map</a></li>
+
           <li class="drop-down"><a href="#">Statistics</a>
                 <ul>
                   <li><a href="#">Overall</a></li>
@@ -78,5 +80,4 @@
   </header>     <!-- End Header -->
   
 </body>
-
 

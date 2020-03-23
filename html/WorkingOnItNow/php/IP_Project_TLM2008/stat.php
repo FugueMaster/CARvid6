@@ -31,7 +31,9 @@ div.a {
         <div class="d-flex justify-content-between align-items-center">
           <h2>Statistics</h2>
           <ol>
-            <li><a href="webpage.html">Home</a></li>
+
+            <li><a href="webpage.php">Home</a></li>
+
 			<li>Statistics</li>
           </ol>
         </div>

@@ -1,6 +1,8 @@
 <!-- ======= Footer ======= -->
 
+
   <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
 
 
     <div class="footer-top">
@@ -37,6 +39,7 @@
                 <a href="https://www.instagram.com/singaporetech/" class="instagram"><i class="bx bxl-instagram"></i></a>
                 </div>
 
+
           </div>
 
         </div>
@@ -61,6 +64,7 @@
     
 </footer>   <!-- End Footer -->
 
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -75,4 +79,5 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
 
