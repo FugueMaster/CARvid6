@@ -95,7 +95,7 @@ table, tr, th {
    <br>
   
   <tr bgcolor="#FF0000">
-    <th>Traffic Update</th>
+    <th>Vehicle Breakdown</th>
    
     <th>Date</th>
     <th>Time</th>

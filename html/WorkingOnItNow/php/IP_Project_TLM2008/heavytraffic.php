@@ -97,60 +97,73 @@ body {
   <br>
   <br>
   <tr bgcolor="#FF0000">
-    <th>Traffic Update</th>
+    <th>Heavy Traffic</th>
    
-    <th>Date/Time</th>
+    <th>Date</th>
+    <th>Time</th>
 	
   </tr>
   
   
   <tr bgcolor="yellow">
     <td>Heavy Traffic on TPE (towards PIE) at Upper Changi Rd North Exit.</td>
-    <td>10/03 18:27</td>
+    <td>10/03</td>
+    <td>18:27</td>
   </tr>
    <tr bgcolor="yellow">
     <td>Heavy Traffic on BKE (towards Woodlands) at SLE Exit.</td>
-    <td>10/03 18:09</td>
+    <td>10/03</td>
+    <td>18:09</td>
   </tr>
   <tr bgcolor="yellow">
     <td>Heavy Traffic on Braddell Road (towards Bartley) between PIE and Bishan Road.</td>
-    <td>10/03 17:58</td>
+    <td>10/03 </td>
+    <td>17:58</td>
   </tr>
   <tr bgcolor="yellow">
     <td>Heavy Traffic on Jalan Boon Lay (towards Enterprise Road) after International Road.</td>
-    <td>10/03 17:57</td>
+    <td>10/03 </td>
+    <td>17:57</td>
   </tr>
    <tr bgcolor="yellow">
     <td>Heavy Traffic on PIE (towards Changi) after Eng Neo Ave Exit.</td>
-    <td>10/03 16:12</td>
+    <td>10/03</td>
+    <td>16:12</td>
   </tr>
  <tr bgcolor="yellow">
     <td>Heavy Traffic on AYE (towards Tuas) after Clementi Ave 6 Exit.</td>
-    <td>10/03 17:30</td>
+    <td>10/03</td>
+     <td>17:30</td>
   </tr>
  <tr bgcolor="yellow">
     <td>Heavy Traffic on TPE (towards PIE) after Punggol Road Exit.</td>
-    <td>10/03 17:12</td>
+    <td>10/03 </td>
+    <td>17:12</td>
   </tr>
   <tr bgcolor="yellow">
     <td>Heavy Traffic on PIE (towards Tuas)after Jalan Bahar Exit.</td>
-    <td>10/03 17:00</td>
+    <td>10/03</td>
+    <td>17:00</td>
   </tr>
  <tr bgcolor="yellow">
     <td>Heavy Traffic on KJE (towards BKE) between Choa Chu Kang Drive Exit and Woodlands Road Exit.</td>
-    <td>10/03 16:12</td>
+    <td>10/03 </td>
+    <td>16:12</td>
   </tr>
   <tr bgcolor="yellow">
     <td>Heavy Traffic on CTE (towards SLE) between Braddell Rd Exit and AMK Ave 3 Exit.</td>
-    <td>10/03 16:00</td>
+    <td>10/03</td>
+    <td>16:00</td>
   </tr>
  <tr bgcolor="yellow">
     <td>Heavy Traffic on PIE (towards Changi Airport) after BKE.</td>
-    <td>04/03 16:27</td>
+    <td>04/03 </td>
+    <td>16:27</td>
   </tr>
   <tr bgcolor="yellow">
     <td>Heavy Traffic on SLE (towards BKE) at Woodlands Ave 12 Exit.</td>
-    <td>04/03 16:53</td>
+    <td>04/03</td>
+    <td>16:53</td>
   </tr>
 </table>
 

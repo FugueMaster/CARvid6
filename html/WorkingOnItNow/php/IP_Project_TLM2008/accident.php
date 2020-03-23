@@ -96,7 +96,7 @@ body {
 
   <br>
   <br>
-    <th>Traffic Update</th>
+    <th>Accident</th>
    
     <th>Date</th>
     <th>Time</th>
