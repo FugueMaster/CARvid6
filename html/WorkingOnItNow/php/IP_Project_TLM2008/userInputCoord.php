@@ -9,23 +9,27 @@
                 <td valign="top" style="width: 50%; height: 400px">
                     <p>
                         <label>Latitude:</label>
-                        <input type="text" id="latitude" value="37.7397" />
+                        <input type="text" id="latitude" value="" />
                     </p>
                     <p>
                         <label>Longitude:</label>
-                        <input type="text" id="longitude" value="-121.4252" />
+                        <input type="text" id="longitude" value="" />
                     </p>
                     <p>
                         <input type="text" id="propertyname1" value="date" />
-                        <input type="text" id="propertyvalue1" value="20190509" />
+                        <input type="text" id="propertyvalue1" value="" />
                     </p>
                     <p>
                         <input type="text" id="propertyname2" value="foo" />
-                        <input type="text" id="propertyvalue2" value="bar" />
+                        <input type="text" id="propertyvalue2" value="" />
                     </p>
                     <p> 
                     <!-- starts here -->
                         <button type="button" onclick="createGeoJSON()">Create GeoJSON</button>
+                        <!-- <a download="addgeojson.txt" id="downloadlink" style="display: none">Download</a> -->
+                        <button id="downloadBtn">Download</button>
+                        <a id="downloadAnchorElem" style="display:none"></a>
+
                     </p>
                 </td>
                 <td valign="top" style="width: 50%; height: 400px">
@@ -34,11 +38,11 @@
             </tr>
         </table>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/geojson/0.5.0/geojson.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
         <script>
         // starts here
             var out;
+            var testjson;
             const createGeoJSON = () => {
                 const data = [
                     {
@@ -53,21 +57,20 @@
                 document.getElementById("output").value = out;
             }
             createGeoJSON();
-            
-        </script>
-        <script>
-            $(document).ready(function(){
-                $("button").click(function(){
-                    $.post("testJQuery.js",
-                    {
-                        name: "Donald Duck",
-                        city: "Duckburg"
-                    },
-                    function(data,status){
-                        alert("Data: " + data + "\nStatus: " + status);
-                    });
-                });
-            });
+
+            document.getElementById("downloadBtn").addEventListener("click", downloadFile);
+
+            function downloadFile() {
+                //document.getElementById("downloadAnchorElem");
+                var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(out);
+                var dlAnchorElem = document.getElementById('downloadAnchorElem');
+                dlAnchorElem.setAttribute("href",     dataStr     );
+                dlAnchorElem.setAttribute("download", "test.geojson");
+                dlAnchorElem.click();
+            }
+
+             
+
         </script>
     </body>
 </html>
