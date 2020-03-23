@@ -8,11 +8,10 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="webpage.html">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="map.html">Map</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Statistics</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="entry.html">Submit Entry</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.php">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about_user.php">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="map_user.php">Map</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="entry-part1_user.php">Submit Entry</a></li>
             </ul>
           </div>
 
