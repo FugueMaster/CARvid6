@@ -24,6 +24,7 @@ $sql = "SELECT * FROM enter_issue E, heavy_traffic H where E.iid = H.iid";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
+    echo "<h2><u><b>Heavy Traffic</b></u></h2>";
     echo "<table><tr><th>IID</th><th>Time</th><th>Date</th><th>Comment</th><th>Location</th></tr>";
     // output data of each row
     while($row = $result->fetch_assoc()) {

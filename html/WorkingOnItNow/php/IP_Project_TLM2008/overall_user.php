@@ -24,6 +24,7 @@ $sql = "SELECT * FROM enter_issue";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
+    echo "<h2><u><b>Overall Traffic Updates</b></u></h2>";
     echo "<table><tr><th>IID</th><th>Time</th><th>Date</th><th>Comment</th><th>Type</th><th>Longitude</th><th>Latitude</th><th>Location</th></tr>";
     // output data of each row
     while($row = $result->fetch_assoc()) {

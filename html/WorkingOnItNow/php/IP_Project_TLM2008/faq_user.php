@@ -1,5 +1,5 @@
 <html lang="en">
-    <?php include 'header2.inc'?>'
+    <?php include 'header.inc'?>'
     <head>
         <!-- Vendor CSS Files -->
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />

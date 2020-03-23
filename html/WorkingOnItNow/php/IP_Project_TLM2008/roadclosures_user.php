@@ -24,6 +24,7 @@ $sql = "SELECT * FROM enter_issue E, closure C where E.iid = C.iid";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
+    echo "<h2><u><b>Road Closures</b></u></h2>";
     echo "<table><tr><th>IID</th><th>Time</th><th>Date</th><th>Comment</th><th>Location</th><th>Start Date(yyyy-mm-dd)</th><th>End Date(yyyy-mm-dd)</th></tr>";
     // output data of each row
     while($row = $result->fetch_assoc()) {
