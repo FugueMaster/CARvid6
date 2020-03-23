@@ -54,15 +54,15 @@
           <li class="drop-down"><a href="#">Statistics</a>
                 <ul>
                   <li><a href="#">Overall</a></li>
-                  <li><a href="#">Accidents</a></li>
-                  <li><a href="#">Breakdowns</a></li>
-                  <li><a href="#">Road Works</a></li>
-                  <li><a href="#">Heavy Traffic</a></li>
-                  <li><a href="#">Road closures</a></li>
+                  <li><a href="accident.php">Accidents</a></li>
+                  <li><a href="breakdown.php">Breakdowns</a></li>
+                  <li><a href="roadwork.php">Road Works</a></li>
+                  <li><a href="heavytraffic.php">Heavy Traffic</a></li>
+                  <li><a href="roadclosure.php">Road closures</a></li>
                 </ul>
 		  </li>		
              
-          <li class="drop-down"><a href="#">Contact Us</a>
+          <li class="drop-down"><a href="contact">Contact Us</a>
 		       <ul>
 				 <li><a href="faq.html">FAQ</a></li>
 				 <li><a href="entry-part1.php">Submit Entry</a></li>

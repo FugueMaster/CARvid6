@@ -97,41 +97,50 @@ table, tr, th {
   <tr bgcolor="#FF0000">
     <th>Traffic Update</th>
    
-    <th>Date/Time</th>
+    <th>Date</th>
+    <th>Time</th>
 	
   </tr>
   <tr bgcolor="yellow">
     <td>Vehicle breakdown on PIE (towards Changi Airport) after Jalan Eunos.</td>
-    <td>10/03 18:09</td>
+    <td>10/03</td>
+    <td>18:09</td>
   </tr>
 
   <tr bgcolor="yellow">
     <td>Vehicle breakdown on PIE (towards Tuas) after Eng Neo Ave. Avoid lane 6.</td>
-    <td>10/03 17:57</td>
+    <td>10/03</td>
+    <td>17:57</td>
   </tr>
 <tr bgcolor="yellow">
     <td>Vehicle breakdown on KJE (towards PIE) after Woodlands Rd Exit.</td>
-    <td>10/03 16:12</td>
+    <td>10/03</td>
+    <td>16:12</td>
   </tr>
   <tr bgcolor="yellow">
     <td>Vehicle breakdown on ECP (towards Changi Airport) after Marine Vista Rd.</td>
-    <td>10/03 17:30</td>
+    <td>10/03</td>
+    <td>17:30</td>
   </tr>
   <tr bgcolor="yellow">
     <td>Vehicle breakdown on PIE (towards Changi Airport) after Lornie Rd. Avoid Lane 4.</td>
-    <td>10/03 17:12</td>
+    <td>10/03 </td>
+    <td>17:12</td>
   </tr>
   <tr bgcolor="yellow">
     <td>Vehicle breakdown on SLE (towards BKE) before Mandai Rd Exit..</td>
-    <td>10/03 17:00</td>
+    <td>10/03 </td>
+    <td>17:00</td>
   </tr>
   <tr bgcolor="yellow">
     <td>Vehicle breakdown on PIE (towards Tuas) at Adam Rd Entrance</td>
-    <td>04/03 16:27</td>
+    <td>04/03</td>
+    <td> 16:27</td>
   </tr>
   <tr bgcolor="yellow">
     <td>Vehicle breakdown on BKE (towards Woodlands) after Mandai Rd Entrance. Avoid lane 2.</td>
-    <td>04/03 16:53</td>
+    <td>04/03</td>
+    <td>16:53</td>
   </tr>
  
 </table>

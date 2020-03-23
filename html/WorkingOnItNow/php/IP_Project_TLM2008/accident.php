@@ -98,29 +98,35 @@ body {
   <br>
     <th>Traffic Update</th>
    
-    <th>Date/Time</th>
+    <th>Date</th>
+    <th>Time</th>
 	
   </tr>
  
 <tr bgcolor="yellow">
     <td> Accident on Toh Guan Road (towards Toh Guan Road East).</td>
-    <td>04/03 17:00</td>
+    <td>04/03 </td>
+    <td>17:00</td>
   </tr>
 <tr bgcolor="yellow">
     <td>Accident on PIE (towards Tuas) at Thomson Rd Exit.</td>
-    <td>04/03 16:45</td>
+    <td>04/03</td>
+    <td>16:45</td>
   </tr>
 <tr bgcolor="yellow">
     <td>Accident on Sengkang West Avenue near Fernvale Lane/Sengkang West Avenue Junction.</td>
-    <td>04/03 16:37</td>
+    <td>04/03</td>
+    <td>16:37</td>
   </tr>
 <tr bgcolor="yellow">
     <td>Accident on Ang Mo Kio Avenue 5 (towawrds CTE) after Ang Mo Kio Industrial Park 2.</td>
-    <td>04/03 16:30</td>
+    <td>04/03 </td>
+    <td>16:30</td>
   </tr>
 <tr bgcolor="yellow">
     <td>Accident on Macritchie Viaduct (towards Queensway) after MacRitchie viaduct with congestion till Bishan Road.</td>
-    <td>04/03 16:25</td>
+    <td>04/03 </td>
+    <td>16:25</td>
   </tr>
 </table>
 
