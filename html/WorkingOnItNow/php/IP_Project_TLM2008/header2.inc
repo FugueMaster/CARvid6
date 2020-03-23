@@ -5,6 +5,7 @@
   <title>TRINDS</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
+
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -39,42 +40,42 @@
 	  <div class="container">
 
 	    <div class="logo float-left">
-            <h1 class="text-light"><a href="index.php"><span>TRINDS</span></a></h1>
+            <h1 class="text-light"><a href="welcome.php"><span>TRINDS</span></a></h1>
             <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 	    </div>
 	
 	      <nav class="nav-menu float-right d-none d-lg-block"> <ul>
-          <li class="drop-down"><a href="index.php">Home</a>
+          <li class="drop-down"><a href="welcome.php">Home</a>
 		  <ul>
-		    <li><a href="about_user.php">About Us</a></li>
+		    <li><a href="about_admin.php">About Us</a></li>
           </ul>
 		  </li>
-		  <li><a href="mapbox.php">Map</a></li>
+		  <li><a href="mapbox_admin.php">Map</a></li>
           <li class="drop-down"><a href="#">Statistics</a>
                 <ul>
-                  <li><a href="overall_user.php">Overall</a></li>
-                  <li><a href="accidents_user.php">Accidents</a></li>
-                  <li><a href="breakdown_user.php">Breakdowns</a></li>
-                  <li><a href="roadworks_user.php">Road Works</a></li>
-                  <li><a href="heavytraffic_user.php">Heavy Traffic</a></li>
-	          <li><a href="roadclosures_user.php">Road closures</a></li>
+                 <li><a href="overall_admin.php">Overall</a></li>
+                  <li><a href="accidents_admin.php">Accidents</a></li>
+                  <li><a href="breakdown_admin.php">Breakdowns</a></li>
+                  <li><a href="roadworks_admin.php">Road Works</a></li>
+                  <li><a href="heavytraffic_admin.php">Heavy Traffic</a></li>
+	          <li><a href="roadclosures_admin.php">Road closures</a></li>
                 </ul>
 		  </li>		
              
-                  <li class="drop-down"><a href="contact_user.php">Contact Us</a>
+          <li class="drop-down"><a href="#">Contact Us</a>
 		       <ul>
-				 <li><a href="faq_user.php">FAQ</a></li>
+				 <li><a href="faq_admin.php">FAQ</a></li>
 				 <li><a href="entry.php">Submit Entry</a></li>
-                       </ul>  
-                    </li>
-                    
-                    <li class="drop-down"><a href="login.php">Login</a></li>
-                    
+               </ul>
+             
+		  </li>	   
+                     
+                         <li class="drop-down"><a href="logout.php">Log Out</a></li>
+          
       </nav><!-- .nav-menu -->
 
     </div>
   </header><!-- End Header -->
-
 <?php
 
 /* 
