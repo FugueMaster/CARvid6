@@ -40,17 +40,17 @@
 	  <div class="container">
 
 	    <div class="logo float-left">
-            <h1 class="text-light"><a href="webpage.html"><span>TRINDS</span></a></h1>
+            <h1 class="text-light"><a href="webpage.php"><span>TRINDS</span></a></h1>
             <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 	    </div>
 	
 	      <nav class="nav-menu float-right d-none d-lg-block"> <ul>
-          <li class="drop-down"><a href="webpage.html">Home</a>
+                      <li class="drop-down"><a href="webpage.php">Home</a>
 		  <ul>
-		    <li><a href="about.html">About Us</a></li>
+                      <li><a href="about.php">About Us</a></li>
           </ul>
 		  </li>
-		  <li><a href="map.html">Map</a></li>
+                  <li><a href="map.php">Map</a></li>
           <li class="drop-down"><a href="#">Statistics</a>
                 <ul>
                   <li><a href="#">Overall</a></li>
@@ -62,23 +62,15 @@
                 </ul>
 		  </li>		
              
-          <li class="drop-down"><a href="#">Contact Us</a>
-		       <ul>
-				 <li><a href="faq.html">FAQ</a></li>
-				 <li><a href="entry-part1.php">Submit Entry</a></li>
-               </ul>
-		  </li>	   
+                <li class="drop-down"><a href="#">Contact Us</a>
+		    <ul>
+                        <li><a href="faq.php">FAQ</a></li>
+                       <li><a href="entry.php">Submit Entry</a></li>
+                    </ul>
+		</li>	   
+                <li><a href="login.php">Login</a></li>
       </nav><!-- .nav-menu -->
 
     </div>
   </header><!-- End Header -->
   
-
-<?php
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-

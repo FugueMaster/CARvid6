@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\html",
-    "\\html\\WorkingOnItNow"
+    "\\html\\WorkingOnItNow",
+    "\\html\\WorkingOnItNow\\php",
+    "\\html\\WorkingOnItNow\\php\\IP_Project_TLM2008"
   ],
-  "SelectedNode": "\\html\\WorkingOnItNow\\about.html",
+  "SelectedNode": "\\html\\WorkingOnItNow\\php\\IP_Project_TLM2008\\entry-part1.php",
   "PreviewInSolutionExplorer": false
 }
