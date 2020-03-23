@@ -1,0 +1,17 @@
+table,th,tr,td {border-style: solid;}
+
+body table {
+    margin-top:120px;
+    margin-bottom:80px;
+    margin-left: 20px;
+}
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22-Mar-2020, 17:34:51
+    Author     : rycji
+*/
+
