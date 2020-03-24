@@ -1,3 +1,8 @@
+<p id ="demo">
+  <script>
+  document.getElementById("demo").innerHTML =Date();
+</script>
+</p>
 <!-- ======= Footer ======= -->
 
 

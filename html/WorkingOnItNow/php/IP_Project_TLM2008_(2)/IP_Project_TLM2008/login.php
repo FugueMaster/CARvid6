@@ -1,27 +1,34 @@
+<?php
+{
+session_start();
+session_unset();
+session_destroy();
+}
+?>
 <!DOCTYPE html>
-<html lang="en">
-<?php include 'header.inc'?>
-  
-
-  <section id="loginsection">
-        <form id="login"  method="#">
-        <h3>Login Page</h3>
-        LoginID or Email Address*<br><input type="text" name="LoginID" size="80" style="height:20px;" ><br><br>
-        Password*<br><input type="text" name="passwd" size="60" style="height:20px;"/><br><br><br>
-         <input type="button" value="LOGIN" style="height:20px; font-size:16px;"/>
-         <p>Forgotten your password?</p>
+<html>
+    
+    <style>
+        #loginsection {
+            margin-left: 400px;
+            color: #191970;
+        }
+       
+        </style>
         
+        <body>
+     <?php include 'header3.inc'?>
+        <section id="loginsection">
+        <form id="login"  method="post" action="check_login.php">
+        <h3>Login Page</h3>
+        <b>LoginID</b><br><input type="text" name="adid" id="id" size="30" style="height:20px;" ><br><br>
+        <b>Password</b><br><input type="text" name="pass_" id="passwd" size="30" style="height:20px;"/><br><br><br>
+         <input type="submit" name="submit" value="Login"/>
+         <p>Forgotten your password?</p>
+         <?php if(isset($_GET['error'])) echo "<b>Invalid username or password</b>";?>
         </form>
         </section>
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-</body>
-<?php include 'footer.inc'?>
-</html>	
-<?php
+    </body>
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
+     <?php include 'footer.inc'?>
+</html>

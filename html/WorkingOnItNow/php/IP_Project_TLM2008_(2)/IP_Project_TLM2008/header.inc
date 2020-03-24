@@ -48,9 +48,9 @@
 	
         <!-- Start of nav-menu -->
         <nav class="nav-menu float-right d-none d-lg-block"> <ul>
-            <li class="drop-down"><a href="index.php">Home</a>
+            <li class="drop-down"><a href="welcome_user.php">Home</a>
                 <ul>
-		    <li><a href="about.php">About Us</a></li>
+		    <li><a href="about_user.php">About Us</a></li>
                 </ul>
 
 		  </li>
@@ -58,22 +58,23 @@
 
           <li class="drop-down"><a href="#">Statistics</a>
                 <ul>
-                  <li><a href="#">Overall</a></li>
-                  <li><a href="#">Accidents</a></li>
-                  <li><a href="#">Breakdowns</a></li>
-                  <li><a href="#">Road Works</a></li>
-                  <li><a href="#">Heavy Traffic</a></li>
-                  <li><a href="#">Road closures</a></li>
+                  <li><a href="overall_user.php">Overall</a></li>
+                  <li><a href="accidents_user.php">Accidents</a></li>
+                  <li><a href="breakdown_user.php">Breakdowns</a></li>
+                  <li><a href="roadworks_user.php">Road Works</a></li>
+                  <li><a href="heavytraffic_user.php">Heavy Traffic</a></li>
+                  <li><a href="roadclosures_user.php">Road closures</a></li>
                 </ul>
 		  </li>		
              
-          <li class="drop-down"><a href="#">Contact Us</a>
+          <li class="drop-down"><a href="contact_user.php">Contact Us</a>
 
 		 <ul>
                     <li><a href="faq_user.php">FAQ</a></li>
                     <li><a href="entry.php">Submit Entry</a></li>
                  </ul>
           </li>	   
+          <li><a href="logout_user.php">Logout</a></li>
       </nav>    <!--End of nav-menu -->
 
     </div>
