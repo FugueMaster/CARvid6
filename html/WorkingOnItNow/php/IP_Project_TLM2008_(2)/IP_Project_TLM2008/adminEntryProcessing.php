@@ -1,6 +1,14 @@
+<?php
+	session_start();
+	if (!isset($_SESSION['Username']))
+	{
+	header("Location:login.php");
+    }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
-
+<?php include 'header2.inc' ?>
 <?php 
     $servername = "localhost";
     $username = "root";
@@ -18,7 +26,16 @@
     $result = $conn->query($sql);
     $row = $result->fetch_assoc()
 ?>
-    <body style="background-color: #DDD">
+
+    <style>
+        .admin {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+        }
+    </style>
+    <body style="background-color: #DDD; margin-top:100px">
+        <div class="admin">
         <table style="width: 800px">
             <tr>
                 <td>Input</td>
@@ -76,6 +93,7 @@
                 </td>
             </tr>
         </table>
+        </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/geojson/0.5.0/geojson.min.js"></script>
 

@@ -79,7 +79,7 @@
           <li><a href="logout_user.php">Logout</a></li>   
               <?php 
 if(isset($_SESSION['MM_Username']) || empty($_SESSION['MM_Username'])) {
-    echo ' <li><div class ="welcomeuser">  Welcome, User ' . $_SESSION['MM_Username']. '</div></li>'; 
+    echo ' <li><div class ="welcomeuser">  Welcome, User ' . $_SESSION['MM_Username']. '</div></li>'; //if username is correct, will output username after login on welcome_user page
 }?>
       </nav>    <!--End of nav-menu -->
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 
+<!--Confirmation page for Heavy Traffic-->
 <html lang="en">
     <head>
         <title>Confirmation page of Entry form</title>

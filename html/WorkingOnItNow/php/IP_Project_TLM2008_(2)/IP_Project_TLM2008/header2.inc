@@ -60,13 +60,14 @@
                   <li><a href="breakdown_admin.php">Breakdowns</a></li>
                   <li><a href="roadworks_admin.php">Road Works</a></li>
                   <li><a href="heavytraffic_admin.php">Heavy Traffic</a></li>
-	          <li><a href="roadclosures_admin.php">Road closures</a></li>
+	                <li><a href="roadclosures_admin.php">Road closures</a></li>
                 </ul>
-		  </li>			   
+		      </li>
+          <li><a href="adminEntryProcessing.php">Entry Process</a></li>			   
                      
                          <li><a href="logout.php">Log Out</a></li>
              <?php 
-if(isset($_SESSION['Username']) || empty($_SESSION['Username'])) {
+if(isset($_SESSION['Username']) || empty($_SESSION['Username'])) {  
     echo ' <li><div class ="welcomeadmin">  Welcome, ' . $_SESSION['Username']. '</div></li>'; 
 }?>
       </nav><!-- .nav-menu -->
