@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
 <html lang="en">
-      <?php include 'header.inc';?>
     <head>
         <title>Confirmation page of Entry form</title>
     
@@ -34,8 +33,8 @@
         die("Connection failed: " . $conn->connect_error);
     }
 
-$conn1->query("INSERT INTO enter_issue(timestamp, r_date, comments, type, lon, lat, location, pid)"
-            . "VALUES (NOW(), NOW(), '$cMessage', 'road closure', '$cLon', '$cLat', '$cLocation', '$cPid');");
+$conn1->query("INSERT INTO enter_issue(timestamp, r_date, comments, type, lon, lat, location, pid, Imid)"
+            . "VALUES (NOW(), NOW(), '$cMessage', 'road closure', '$cLon', '$cLat', '$cLocation', '$cPid', 'assets/geojson/road-closure.png');");
 
 $iid=$conn1->insert_id;
 $conn2->query("INSERT INTO closure(iid,lane_no) VALUES ($iid,'$sc_date','$ec_date');");

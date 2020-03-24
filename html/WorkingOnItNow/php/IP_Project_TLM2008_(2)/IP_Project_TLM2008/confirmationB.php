@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
 <html lang="en">
-      <?php include 'header.inc';?>
     <head>
         <title>Confirmation page of Entry form</title>
     
@@ -35,8 +34,8 @@
     }
 
 
-$conn1->query("INSERT INTO enter_issue(timestamp, r_date, comments, type, lon, lat, location, pid)"
-            . "VALUES (NOW(), NOW(), '$bMessage', 'breakdown', '$bLon', '$bLat', '$bLocation', '$bPid');");
+$conn1->query("INSERT INTO enter_issue(timestamp, r_date, comments, type, lon, lat, location, pid, Imid)"
+            . "VALUES (NOW(), NOW(), '$bMessage', 'breakdown', '$bLon', '$bLat', '$bLocation', '$bPid', 'assets/geojson/breakdown.png');");
 
 $iid=$conn1->insert_id;
 $conn2->query("INSERT INTO breakdown(iid,lane_no,carplate) VALUES ($iid,'$bLane_no','$bCarplate');");
