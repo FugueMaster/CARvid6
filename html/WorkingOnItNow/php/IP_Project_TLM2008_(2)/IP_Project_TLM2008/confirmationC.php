@@ -41,7 +41,7 @@ $iid=$conn1->insert_id;
 $conn2->query("INSERT INTO closure(iid,lane_no) VALUES ($iid,'$sc_date','$ec_date');");
 
 echo "The submission is successful!<br>";
-echo "Thank you <b>'$name'</b> of PID number <b>'$aPid'</b> with <b>'$email'</b> for the road closure  report.";
+echo "Thank you <b>'$name'</b> of PID number <b>'$cPid'</b> with <b>'$email'</b> for the road closure  report.";
 
     $conn->close();
         ?>  

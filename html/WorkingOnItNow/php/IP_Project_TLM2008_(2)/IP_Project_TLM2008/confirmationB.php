@@ -42,7 +42,7 @@ $iid=$conn1->insert_id;
 $conn2->query("INSERT INTO breakdown(iid,lane_no,carplate) VALUES ($iid,'$bLane_no','$bCarplate');");
 
 echo "The submission is successful!<br>";
-echo "Thank you <b>'$name'</b> of PID number <b>'$aPid'</b> with <b>'$email'</b> for the vehicle breakdown report.";
+echo "Thank you <b>'$name'</b> of PID number <b>'$bPid'</b> with <b>'$email'</b> for the vehicle breakdown report.";
 
     $conn->close();
         

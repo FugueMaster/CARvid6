@@ -44,7 +44,7 @@ $iid=$conn1->insert_id;
 $conn2->query("INSERT INTO roadworks(iid,lane_no) VALUES ($iid,'$wLane_no','$sw_date','$ew_date','$eEst_duration');");
 
 echo "The submission is successful!<br>";
-echo "Thank you <b>'$name'</b> of PID number <b>'$aPid'</b> with <b>'$email'</b> for the road work report.";
+echo "Thank you <b>'$name'</b> of PID number <b>'$wPid'</b> with <b>'$email'</b> for the road work report.";
 
     $conn->close();
         ?>  
