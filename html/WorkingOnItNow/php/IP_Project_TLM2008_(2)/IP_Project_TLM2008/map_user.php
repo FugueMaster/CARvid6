@@ -19,11 +19,11 @@
       }
 
       #info-box {
-        background-color: transparent;
+        background-color: white;
         border: 1px solid black;
         bottom: 30px;
-        width: 200px;
-        height: 50px;
+        width: 400px;
+        height: 80px;
         padding: 5px 10px 70px 10px;
         position: absolute;
         left: 30px;
@@ -62,7 +62,8 @@
           var html = 'Issue no.: '+event.feature.getProperty('iid')+'<br>'
                   + 'Location: '+event.feature.getProperty('location')+'<br>'
                   + 'Type: '+event.feature.getProperty('type')+'<br>'
-                  + 'Time reported: '+event.feature.getProperty('timestamp');
+                  + 'Time reported: '+event.feature.getProperty('timestamp')+'<br>'
+                  + 'Comments: '+event.feature.getProperty('comments');
           document.getElementById('info-box').innerHTML = html;
         });
       

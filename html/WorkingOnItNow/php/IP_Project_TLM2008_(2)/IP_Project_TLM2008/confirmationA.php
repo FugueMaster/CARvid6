@@ -32,7 +32,7 @@
         die("Connection failed: " . $conn->connect_error);
     }
 
-$conn1->query("INSERT INTO enter_issue(timestamp, r_date, comments, type, lon, lat, location, pid, Imid)"
+$conn1->query("INSERT INTO enter_issue(timestamp, r_date, comments, type, lon, lat, location, pid, icon)"
             . "VALUES (NOW(), NOW(), '$aMessage', 'accident', '$aLon', '$aLat', '$aLocation', '$aPid', 'assets/geojson/accident.jpg');");
 
 $iid=$conn1->insert_id;

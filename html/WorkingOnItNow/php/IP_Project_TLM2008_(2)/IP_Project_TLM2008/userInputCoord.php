@@ -1,4 +1,23 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<?php 
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "ip_schema";
+
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    $sql = "SELECT * FROM `enter_issue` ORDER BY iid DESC LIMIT 1";
+    $result = $conn->query($sql);
+    $row = $result->fetch_assoc()
+?>
     <body style="background-color: #DDD">
         <table style="width: 800px">
             <tr>
@@ -9,39 +28,39 @@
                 <td valign="top" style="width: 50%; height: 400px">
                     <p>
                         <label>Longitude:</label>
-                        <input type="text" id="longitude" value="" />
+                        <input type="text" id="longitude" value="<?php echo $row["lon"] ?>" />
                     </p>
                     <p>
                         <label>Latitude:</label>
-                        <input type="text" id="latitude" value="" />
+                        <input type="text" id="latitude" value="<?php echo $row["lat"] ?>" />
                     </p>
                     <p>
                         <input type="text" id="iid" value="Issue No." />
-                        <input type="text" id="iid_value" value="" />
+                        <input type="text" id="iid_value" value="<?php echo $row["iid"] ?>" />
                     </p>
                     <p>
                         <input type="text" id="timestamp" value="Time Reported" />
-                        <input type="text" id="timestamp_value" value="" />
+                        <input type="text" id="timestamp_value" value="<?php echo $row["timestamp"] ?>" />
                     </p>
                     <p>
                         <input type="text" id="comments" value="Comments" />
-                        <input type="text" id="comments_value" value="" /> 
+                        <input type="text" id="comments_value" value="<?php echo $row["comments"] ?>" /> 
                     </p>
                     <p>
                         <input type="text" id="type" value="Issue Type" />
-                        <input type="text" id="type_value" value="" />
+                        <input type="text" id="type_value" value="<?php echo $row["type"] ?>" />
                     </p>
                     <p>
                         <input type="text" id="location" value="Location" />
-                        <input type="text" id="location_value" value="" />
+                        <input type="text" id="location_value" value="<?php echo $row["location"] ?>" />
                     </p>
                     <p>
                         <input type="text" id="pid" value="Username" />
-                        <input type="number" id="pid_value" value="" />
+                        <input type="number" id="pid_value" value="<?php echo $row["pid"] ?>" />
                     </p>
                     <p>
                         <input type="text" id="icon" value="Icon" />
-                        <input type="text" id="icon_value" value="" />
+                        <input type="text" id="icon_value" value="<?php echo $row["icon"] ?>" />
                     </p>
                     <p> 
                     <!-- starts here -->
@@ -57,6 +76,7 @@
                 </td>
             </tr>
         </table>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/geojson/0.5.0/geojson.min.js"></script>
 
         <script>
@@ -70,13 +90,13 @@
                         lng: document.getElementById("longitude").value
                     }
                 ];
-                data[0][document.getElementById("iid").value] = document.getElementById("iid_value").value;
-                data[0][document.getElementById("timestamp").value] = document.getElementById("timestamp_value").value;
-                data[0][document.getElementById("comments").value] = document.getElementById("comments_value").value;
-                data[0][document.getElementById("type").value] = document.getElementById("type_value").value;
-                data[0][document.getElementById("location").value] = document.getElementById("location_value").value;
-                data[0][document.getElementById("pid").value] = document.getElementById("pid_value").value;
-                data[0][document.getElementById("icon").value] = document.getElementById("icon_value").value;
+                data[0]["iid"] = document.getElementById("iid_value").value;
+                data[0]["timestamp"] = document.getElementById("timestamp_value").value;
+                data[0]["comments"] = document.getElementById("comments_value").value;
+                data[0]["type"] = document.getElementById("type_value").value;
+                data[0]["location"] = document.getElementById("location_value").value;
+                data[0]["pid"] = document.getElementById("pid_value").value;
+                data[0]["icon"] = document.getElementById("icon_value").value;
 
 
 
