@@ -8,6 +8,14 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+.welcomeadmin
+{
+    color:#FFF;
+}
+.welcomeuser
+{
+    color:#FFF;
+}
 body {
   font-family: "Open Sans", sans-serif;
   color: #444;
@@ -73,6 +81,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 
 #header.header-transparent {
   background: none;
+  margin-top:10px;
 }
 
 #header.header-scrolled {

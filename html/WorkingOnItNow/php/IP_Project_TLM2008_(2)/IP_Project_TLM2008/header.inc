@@ -48,6 +48,8 @@
 	
         <!-- Start of nav-menu -->
         <nav class="nav-menu float-right d-none d-lg-block"> <ul>
+
+                
             <li class="drop-down"><a href="welcome_user.php">Home</a>
                 <ul>
 		    <li><a href="about_user.php">About Us</a></li>
@@ -74,11 +76,15 @@
                     <li><a href="entry.php">Submit Entry</a></li>
                  </ul>
           </li>	   
-          <li><a href="logout_user.php">Logout</a></li>
+          <li><a href="logout_user.php">Logout</a></li>   
+              <?php 
+if(isset($_SESSION['MM_Username']) || empty($_SESSION['MM_Username'])) {
+    echo ' <li><div class ="welcomeuser">  Welcome, User ' . $_SESSION['MM_Username']. '</div></li>'; 
+}?>
       </nav>    <!--End of nav-menu -->
 
     </div>
   </header>     <!-- End Header -->
-  
+ 
 </body>
 

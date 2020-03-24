@@ -9,6 +9,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <?php include 'header2.inc'?>
+     
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex justify-content-center align-items-center">
     <div id="heroCarousel" class="container carousel carousel-fade" data-ride="carousel">

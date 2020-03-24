@@ -55,7 +55,7 @@
                         <li><a href="login_user.php">Login as user</a></li>
                     </ul> 
                 </li>    
-                  
+                 
               </nav><!-- .nav-menu -->
 
             </div>
