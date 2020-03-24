@@ -1,3 +1,8 @@
+CREATE TABLE admin (
+    aid varchar(15),
+    passw varchar(15)
+);
+
 CREATE TABLE person (
     pid int,
     pass varchar(50),
@@ -18,6 +23,7 @@ CREATE TABLE enter_issue(
     lat double,
     location varchar(100),
     pid int NOT NULL,
+    icon varchar(100),
     PRIMARY KEY(iid),
     FOREIGN KEY(pid) REFERENCES person(pid) ON DELETE NO ACTION
 );
