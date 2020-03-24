@@ -8,17 +8,16 @@
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
 <script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js"></script>
 <link href="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css" rel="stylesheet" />
-	
-
 </head>
+
 <body>
-    <!-- show coordinates in webpage for developing/debugging purposes -->
+    <!-- show coordinates in webpage -->
     <style type="text/css">
       #map {
         height: 70%;
         width: 100%;
       }
-      /* Optional: Makes the sample page fill the window. */
+      /* makes the sample page fill the window. */
       html, body {
         height: 100%;
         margin: 0;
@@ -39,18 +38,15 @@
         }
     </style>
 
-   <!-- Geocoder API -->
+    <!-- Geocoder API -->
     <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js"></script>
-    <link
-        rel="stylesheet"
-        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.css"
-        type="text/css"
-    />
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.css"
+    type="text/css" />
     <!-- Promise polyfill script required to use Mapbox GL Geocoder in IE 11 -->
     <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
 
- <!-- ======= Contact Section ======= -->    
+    <!-- ======= Sub-header section ======= -->    
     <main id="main">
     <section class="breadcrumbs">
       <div class="container">
@@ -65,7 +61,7 @@
         </div>
 
       </div>
-    </section><!-- End Contact Section -->
+    </section><!-- End Sub-header Section -->
     </main>
  
     <!-- Set map -->     
@@ -73,7 +69,6 @@
     <div id="displayhelp">
         Select the location you want to report an incident: 
     </div>
-    
     
     <main id="main">
   <!-- ======= Contact Section ======= -->
@@ -111,7 +106,7 @@
           </div>
 	  
 	  <div class="col-lg-6">
-              <form action="confirmationA.php" method="post" role="form" class="php-email-form">
+            <form action="confirmationA.php" method="post" role="form" class="php-email-form">
               <div class="form-row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -138,9 +133,9 @@
                 </div>
               </div>
                   
-                <div>
-                  <input type="text" name="location" class="form-control" id="location" placeholder="Your location based on nearest road name">
-                </div>
+              <div>
+                <input type="text" name="location" class="form-control" id="location" placeholder="Your location based on nearest road name">
+              </div>
                   
               <div class="form-group">
                 <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
@@ -169,19 +164,18 @@
     </section><!-- End Contact Section -->
 	
 
-  </main><!-- End #main -->
-
-
+    </main><!-- End #main -->
+    
 </body>
  
-  <!-- Mapbox Script -->
+<!-- Mapbox Script -->
 <script>
-	    mapboxgl.accessToken = 'pk.eyJ1IjoiZnVndWVtYXN0ZXIiLCJhIjoiY2s3aG45dDQ0MGM4YzNmbGxiM3JqaXBlaCJ9.UXkXKi2Cq8veJTtkUYq8wg';
+	mapboxgl.accessToken = 'pk.eyJ1IjoiZnVndWVtYXN0ZXIiLCJhIjoiY2s3aG45dDQ0MGM4YzNmbGxiM3JqaXBlaCJ9.UXkXKi2Cq8veJTtkUYq8wg';
         
         // Set scorlling boundaries to Singapore Map
         var bounds = [
             [103.56480861951604, 1.154021455003118], // Southwest coordinates[lng, lat]
-            [104.13164125586022, 1.518896810581026] // Northeast coordinates[lng, lat]
+            [104.13164125586022, 1.518896810581026]  // Northeast coordinates[lng, lat]
         ];
 
         // Set map 
@@ -197,7 +191,7 @@
             var marker = new mapboxgl.Marker({
             draggable: false
             });
-        // create marker: mouse on click event
+        // Create marker: mouse on click event
         map.on('click', function(e) {  
 
             marker.setLngLat(e.lngLat);
@@ -215,7 +209,7 @@
             accessToken: mapboxgl.accessToken,
             mapboxgl: mapboxgl
         }));
-    </script>
+</script>
 <?php include'footer.inc' ?>
 
 </html>
