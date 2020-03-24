@@ -38,15 +38,17 @@
    <!-- ======= Header ======= -->
    <header id="header" class="fixed-top ">
 	  <div class="container">
-
+          
 	    <div class="logo float-left">
             <a href="welcome.php"><img src="assets/img/logo.png" alt="logo"></a>      <!-- TRINDS logo-->            
             <!--<h1 class="text-light"><a href="index.php"><span>TRINDS</span></a></h1> !-->
+          
 	    </div>
-	
-	      <nav class="nav-menu float-right d-none d-lg-block"> <ul>
-          <li class="drop-down"><a href="welcome.php">Home</a>
-		  <ul>
+              
+              <nav class="nav-menu float-right d-none d-lg-block"> <ul>
+                
+                  <li class="drop-down"><a href="welcome.php">Home</a>
+                  <ul>
 		    <li><a href="about_admin.php">About Us</a></li>
           </ul>
 		  </li>
@@ -63,7 +65,10 @@
 		  </li>			   
                      
                          <li><a href="logout.php">Log Out</a></li>
-          
+             <?php 
+if(isset($_SESSION['Username']) || empty($_SESSION['Username'])) {
+    echo ' <li><div class ="welcomeadmin">  Welcome, ' . $_SESSION['Username']. '</div></li>'; 
+}?>
       </nav><!-- .nav-menu -->
 
     </div>

@@ -3,12 +3,11 @@
 <html lang="en">
     <head>
         <title>Confirmation page of Entry form</title>
-    
     </head>
   
     <body>
         <?php 
-        //road works
+        //get variable from form input for road works and validate
         $wLane_no= filter_input(INPUT_POST, 'lane_no');
         $sw_date= filter_input(INPUT_POST, 's_date');
         $ew_date= filter_input(INPUT_POST, 'e_date');
@@ -26,26 +25,29 @@
         $name=filter_input(INPUT_POST, 'name');
         $email=filter_input(INPUT_POST, 'email');        
 
-    // Create connection
+        // Create connection
         $conn1 = new mysqli($servername, $username, $password, $dbname);
         $conn2 = new mysqli($servername, $username, $password, $dbname);
           $conn=$conn1=$conn2;
-    // Check connection
-    if ($conn->connect_error) {
+        // Check connection
+        if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
-    }
+        }
 
-$conn1->query("INSERT INTO enter_issue(timestamp, r_date, comments, type, lon, lat, location, pid, icon)"
+
+        $conn1->query("INSERT INTO enter_issue(timestamp, r_date, comments, type, lon, lat, location, pid, icon)"
             . "VALUES (NOW(), NOW(), '$wMessage', 'road works', '$wLon', '$wLat', '$wLocation', '$wPid', 'assets/geojson/roadworks.jpg');");
 
-$iid=$conn1->insert_id;
 
-$conn2->query("INSERT INTO roadworks(iid,lane_no) VALUES ($iid,'$wLane_no','$sw_date','$ew_date','$eEst_duration');");
+        $iid=$conn1->insert_id;
 
-echo "The submission is successful!<br>";
-echo "Thank you <b>'$name'</b> of PID number <b>'$wPid'</b> with <b>'$email'</b> for the road work report.";
+        $conn2->query("INSERT INTO roadworks(iid,lane_no) VALUES ($iid,'$wLane_no','$sw_date','$ew_date','$eEst_duration');");
 
-    $conn->close();
+        //print out when form submission is successful
+        echo "The submission is successful!<br>";
+        echo "Thank you <b>'$name'</b> of PID number <b>'$wPid'</b> with <b>'$email'</b> for the road work report.";
+
+        $conn->close();
         ?>  
     </body>
     
