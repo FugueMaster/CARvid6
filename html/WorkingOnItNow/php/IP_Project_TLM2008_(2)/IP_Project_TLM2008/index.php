@@ -18,7 +18,7 @@ and open the template in the editor.
                 <h2 class="animated fadeInDown">Welcome <span>to TRINDS</span></h2>
                 <p class="animated fadeInUp">TRaffic INformation Display System(TRINDS)</p>
                 <p class="animated fadeInUp">Your one-stop updated traffic news for all</p>
-                    <a href="about.php" class="btn-get-started animated fadeInUp">Read More</a>
+                    <a href="login_user.php" class="btn-get-started animated fadeInUp">Read More</a>
               </div>
             </div>
 
@@ -27,7 +27,7 @@ and open the template in the editor.
               <div class="carousel-container">
                 <h2 class="animated fadeInDown">No time to listen to the radio for traffic updates?</h2>
                 <p class="animated fadeInUp">Fret Not! Look out for the latest traffic updates from our site</p>
-                <a href="map.php" class="btn-get-started animated fadeInUp">Find out how</a>
+                <a href="login_user.php" class="btn-get-started animated fadeInUp">Find out how</a>
               </div>
             </div>
 
@@ -36,7 +36,7 @@ and open the template in the editor.
               <div class="carousel-container">
                 <h2 class="animated fadeInDown">Stuck in a traffic jam or encounter any vehicle breakdowns?</h2>
                 <p class="animated fadeInUp">Help others by submitting an entry to us </p>
-                <a href="entry-part1.php" class="btn-get-started animated fadeInUp">Submit now</a>
+                <a href="login_user.php" class="btn-get-started animated fadeInUp">Submit now</a>
               </div>
             </div>
 

@@ -1,4 +1,14 @@
 <html lang="en">
+<?php 
+	session_start();
+		
+	if(!isset($_SESSION))
+	{
+		header('location:login.php');
+		exit;
+  }
+?>
+
     <?php include 'header2.inc'?>'
     <head>
         <!-- Vendor CSS Files -->

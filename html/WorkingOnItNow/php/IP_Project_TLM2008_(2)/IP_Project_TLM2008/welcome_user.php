@@ -9,7 +9,7 @@
 		
 	if(!isset($_SESSION))
 	{
-		header('location:login.php');
+		header('location:login_user.php');
 		exit;
 	}
 	
@@ -45,7 +45,7 @@
         <div class="carousel-container">
           <h2 class="animated fadeInDown">Stuck in a traffic jam or encounter any vehicle breakdowns?</h2>
           <p class="animated fadeInUp">Help others by submitting an entry to us </p>
-          <a href="entry-part1_user.php" class="btn-get-started animated fadeInUp">Submit now</a>
+          <a href="entry.php" class="btn-get-started animated fadeInUp">Submit now</a>
         </div>
       </div>
 

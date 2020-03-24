@@ -33,15 +33,6 @@
         </div>
       </div>
 
-      <!-- Slide 3 -->
-      <div class="carousel-item">
-        <div class="carousel-container">
-          <h2 class="animated fadeInDown">Stuck in a traffic jam or encounter any vehicle breakdowns?</h2>
-          <p class="animated fadeInUp">Help others by submitting an entry to us </p>
-          <a href="entry-part1_admin.php" class="btn-get-started animated fadeInUp">Submit now</a>
-        </div>
-      </div>
-
       <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
