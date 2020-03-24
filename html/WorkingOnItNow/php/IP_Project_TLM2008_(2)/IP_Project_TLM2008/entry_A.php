@@ -106,7 +106,10 @@
           </div>
 	  
 	  <div class="col-lg-6">
-            <form action="confirmationA.php" method="post" role="form" class="php-email-form">
+
+            <h2>Accident issue form</h2>
+            <form action="confirmationA.php" method="post" class="php-email-form">
+
               <div class="form-row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -141,19 +144,18 @@
                 <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                 <div class="validate"></div>
               </div>
+                  
               <div class="form-group">
                   <label>Enter lane number applicable for <b>accident</b> report.</label>
                   <input type="number" name="lane_no" placeholder="Lane number" min="0" data-rule="minlen:1" data-msg="Please enter lane number.">
                   <div class="validate"></div>
               </div>
-                                
-              
               <div class="mb-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-                <div class="text-center"><button type="submit">Next</button></div>
+              </div>                   
+              <div class="text-center"><input type="submit" value="Submit"></div>
                               
             </form>
           </div>

@@ -107,7 +107,8 @@
           </div>
 	  
 	  <div class="col-lg-6">
-              <form action="confirmationW.php" method="post" role="form" class="php-email-form">
+              <h2>Road work issue form entry</h2>
+              <form action="confirmationW.php" method="post" class="php-email-form">
               <div class="form-row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -145,7 +146,7 @@
                   
               <div class="form-group">
 		<label>Select lane number applicable for <b>road works</b> report</label>
-                    <select class="c-form-type" id="rLane_no" data-rule="required" data-msg="Please select lane">
+                    <select class="c-form-type" id="rLane_no" min="0" data-rule="required" data-msg="Please select lane">
                         <option value="Type">Select...</option>
                         <option value="nil">-</option>
                         <option value="1">1</option>
@@ -171,7 +172,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-                <div class="text-center"><button type="submit">Next</button></div>
+                  <div class="text-center"><input type="submit" value="Submit"></div>
               
             </form>
           </div>

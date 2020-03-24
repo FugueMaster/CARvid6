@@ -107,8 +107,9 @@
           </div>
 	  
 	  <div class="col-lg-6">
-              <form action="confirmationB.php" method="post" role="form" class="php-email-form">
-              <div class="form-row">
+              <h2>Breakdown issue form entry</h2>
+              <form action="confirmationB.php" method="post" class="php-email-form">
+                <div class="form-row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validate"></div>
@@ -157,11 +158,10 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-                <div class="text-center"><button type="submit">Next</button></div>
-              
-            </form>
-          </div>
+                <div class="text-center"><input type="submit" value="Submit"></div>  
 
+              </div>
+              </form>
         </div>
 
       </div>

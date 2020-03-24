@@ -2,7 +2,6 @@
 
 <!--Confirmation page for Accidents-->
 <html lang="en">
-      <?php include 'header.inc';?>
     <head>
         <title>Confirmation page of Entry form</title>
     </head>
@@ -32,7 +31,12 @@
         // Check connection
         if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
-        }
+
+    }
+
+$conn1->query("INSERT INTO enter_issue(timestamp, r_date, comments, type, lon, lat, location, pid, icon)"
+            . "VALUES (NOW(), NOW(), '$aMessage', 'accident', '$aLon', '$aLat', '$aLocation', '$aPid', 'assets/geojson/accident.jpg');");
+
 
         $conn1->query("INSERT INTO enter_issue(timestamp, r_date, comments, type, lon, lat, location, pid)"
         . "VALUES (NOW(), NOW(), '$aMessage', 'accident', '$aLon', '$aLat', '$aLocation', '$aPid');");

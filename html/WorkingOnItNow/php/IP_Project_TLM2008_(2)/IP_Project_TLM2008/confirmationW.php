@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
 <html lang="en">
-      <?php include 'header.inc';?>
     <head>
         <title>Confirmation page of Entry form</title>
     </head>
@@ -35,8 +34,10 @@
         die("Connection failed: " . $conn->connect_error);
         }
 
-        $conn1->query("INSERT INTO enter_issue(timestamp, r_date, comments, type, lon, lat, location, pid)"
-            . "VALUES (NOW(), NOW(), '$wMessage', 'road works', '$wLon', '$wLat', '$wLocation', '$wPid');");
+
+        $conn1->query("INSERT INTO enter_issue(timestamp, r_date, comments, type, lon, lat, location, pid, icon)"
+            . "VALUES (NOW(), NOW(), '$wMessage', 'road works', '$wLon', '$wLat', '$wLocation', '$wPid', 'assets/geojson/roadworks.jpg');");
+
 
         $iid=$conn1->insert_id;
 
@@ -44,7 +45,7 @@
 
         //print out when form submission is successful
         echo "The submission is successful!<br>";
-        echo "Thank you <b>'$name'</b> of PID number <b>'$aPid'</b> with <b>'$email'</b> for the road work report.";
+        echo "Thank you <b>'$name'</b> of PID number <b>'$wPid'</b> with <b>'$email'</b> for the road work report.";
 
         $conn->close();
         ?>  
