@@ -29,7 +29,7 @@
       }
 
       #info-box {
-        background-color: transparent;
+        background-color: white;
         border: 1px solid black;
         bottom: 30px;
         width: 200px;
