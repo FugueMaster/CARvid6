@@ -23,7 +23,7 @@
         $servername = "localhost";
         $username = "root";
         $password = "";
-        $dbname = "IP_Project";
+        $dbname = "ip_schema";
         $name=filter_input(INPUT_POST, 'name');
         $email=filter_input(INPUT_POST, 'email');        
 
