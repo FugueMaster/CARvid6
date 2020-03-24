@@ -8,27 +8,30 @@ and open the template in the editor.
  <?php include 'header.inc'?>
 <link rel="stylesheet" href="assets/css/display_data.css">
 <?php
+//assign required variables for db connection link
 $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "ip_schema";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $password, $dbname);//connection to database
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * FROM enter_issue E, breakdown B where E.iid = B.iid";
-$result = $conn->query($sql);
+$sql = "SELECT * FROM enter_issue E, breakdown B where E.iid = B.iid";//for displaying of all breakdown info for user in webpage
+$result = $conn->query($sql);//send query to mysql server
 
 if ($result->num_rows > 0) {
      echo "<h2><u><b>Breakdowns</b></u></h2>";
-    echo "<table><tr><th>IID</th><th>Time</th><th>Date</th><th>Comment</th><th>Location</th><th>Carplate</th><th>Lane Number</th></tr>";
+    echo "<table><tr><th>IID</th><th>Time</th><th>Date</th><th>Comment</th><th>Location</th><th>Carplate</th><th>Lane Number</th></tr>";//output table with titles
     // output data of each row
+    /* fetch associative array */
     while($row = $result->fetch_assoc()) {
-        echo "<tr><td>" . $row["iid"]. "</td><td>" . $row["timestamp"]."</td><td>" . $row["r_date"]."</td><td>". $row["comments"]. " </td><td>" . $row["location"]."</td><td> " . $row["carplate"]."</td><td>" . $row["lane_no"]."</td></tr>";
+        echo "<tr><td>" . $row["iid"]. "</td><td>" . $row["timestamp"]."</td><td>" . $row["r_date"]."</td><td>". $row["comments"]. " </td><td>" . $row["location"]."</td><td> " . $row["carplate"]."</td><td>" . $row["lane_no"]."</td></tr>";//retrieve attribute data from database into table
+    }
     }
     echo "</table>";
 } else {
