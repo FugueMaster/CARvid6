@@ -1,5 +1,15 @@
 <!DOCTYPE html>
 
+<?php 
+	session_start();
+		
+	if(!isset($_SESSION))
+	{
+		header('location:login_user.php');
+		exit;
+  }
+?>
+
 <html>
     <?php include 'header.inc'?>
 <head>

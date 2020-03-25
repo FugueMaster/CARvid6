@@ -838,6 +838,25 @@
         "pid": "5",
         "icon": "assets/geojson/road-closure.png"
     }
+},
+{
+  "type": "Feature",
+  "geometry": {
+      "type": "Point",
+      "coordinates": [
+          103.85138569338619,
+          1.3427642043450732
+      ]
+  },
+  "properties": {
+      "iid": "62",
+      "timestamp": "12:58:28",
+      "comments": "ghghg",
+      "type": "accident",
+      "location": "Clover Rise",
+      "pid": "5",
+      "icon": "assets/geojson/accident.jpg"
+  }
 }
 ]
 }
