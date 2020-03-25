@@ -155,8 +155,16 @@
               </div>
                   
               <div class="form-group">
-                <label>Enter lane number applicable for <b>vehicle breakdown</b> report.</label>
-                  <input type="number" name="lane_no" placeholder="Lane number" min="0" data-rule="minlen:1" data-msg="Please enter lane number.">
+		<label>Select lane number applicable for <b>vehicle breakdown</b> report</label>
+                    <select class="c-form-type" id="rLane_no" min="0" data-rule="required" data-msg="Please select lane">
+                        <option value="Type">Select...</option>
+                        <option value="nil">-</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option> 
+                    </select><br>
                   <div class="validate"></div>
                 <div class="validate"></div>
                 <br><label>Enter car plate number of <b>breakdown vehicle</b></label>
