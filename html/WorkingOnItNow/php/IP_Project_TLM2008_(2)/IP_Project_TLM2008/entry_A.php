@@ -65,7 +65,7 @@
           <h2>Submit Entry</h2>
           <ol>
             <li><a href="welcome_user.php">Home</a></li>
-			<li>Contact Us</li>
+			      <li>Contact Us</li>
             <li>Submit Entry</li>
           </ol>
         </div>

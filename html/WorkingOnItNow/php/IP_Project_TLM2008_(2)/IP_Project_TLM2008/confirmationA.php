@@ -34,7 +34,7 @@
 
     }
 
-$conn1->query("INSERT INTO enter_issue(timestamp, r_date, comments, type, lon, lat, location, pid, icon)"
+        $conn1->query("INSERT INTO enter_issue(timestamp, r_date, comments, type, lon, lat, location, pid, icon)"
             . "VALUES (NOW(), NOW(), '$aMessage', 'accident', '$aLon', '$aLat', '$aLocation', '$aPid', 'assets/geojson/accident.jpg');");
 
 
