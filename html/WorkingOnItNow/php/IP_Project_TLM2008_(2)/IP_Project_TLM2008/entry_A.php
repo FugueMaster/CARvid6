@@ -118,7 +118,7 @@
 	  <div class="col-lg-6">
 
             <h2>Accident issue form</h2>
-            <form action="confirmationA.php" method="post" class="php-email-form">
+            <form action="confirmationA.php" method="post" class="php-email-form" onsubmit="return checkForm(this);">
 
               <div class="form-row">
                 <div class="col-md-6 form-group">
@@ -165,7 +165,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>                   
-              <div class="text-center"><input type="submit" value="Submit"></div>
+              <div class="text-center"><input type="submit" value="Submit" name="submitBtn"></div>
                               
             </form>
           </div>
@@ -221,6 +221,13 @@
             accessToken: mapboxgl.accessToken,
             mapboxgl: mapboxgl
         }));
+
+        // Disable submit button to prevent duplicate entries
+        function checkForm(form) {
+          form.submitBtn.disabled = true;
+          form.submitBtn.value = "Please return to homepage...";
+          return true;
+        }
 </script>
 <?php include'footer.inc' ?>
 
