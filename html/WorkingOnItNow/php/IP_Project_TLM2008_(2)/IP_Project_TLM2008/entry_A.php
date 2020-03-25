@@ -156,7 +156,7 @@
               </div>
                   
               <div class="form-group">
-		<label>Select lane number applicable for <b>accident</b> report</label>
+		                <label>Select lane number applicable for <b>accident</b> report</label>
                     <select class="c-form-type" id="rLane_no" min="0" data-rule="required" data-msg="Please select lane">
                         <option value="Type">Select...</option>
                         <option value="nil">-</option>
