@@ -857,6 +857,45 @@
       "pid": "5",
       "icon": "assets/geojson/accident.jpg"
   }
+},
+{
+  "type": "Feature",
+  "geometry": {
+      "type": "Point",
+      "coordinates": [
+          103.78124457674971,
+          1.300739604679606
+      ]
+  },
+  "properties": {
+      "iid": "82",
+      "timestamp": "20:08:07",
+      "comments": "accident involving motorist",
+      "type": "accident",
+      "location": "Dover Dr",
+      "pid": "5",
+      "icon": "assets/geojson/accident.jpg"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+      "type": "Point",
+      "coordinates": [
+          103.81613816628175,
+          1.3055697216849893
+      ]
+  },
+  "properties": {
+      "iid": "83",
+      "timestamp": "20:41:57",
+      "comments": "Vehicle breakdown at Lane 1",
+      "type": "breakdown",
+      "location": "Minden Rd",
+      "pid": "5",
+      "icon": "assets/geojson/breakdown.png"
+  }
 }
+
 ]
 }
