@@ -1,0 +1,51 @@
+﻿iid,timestamp,date,comments,type,lon,lat,location,pid
+1,8:45,3/4/2020,,Road Closure,103.87376,1.346472,Serangoon Ave 1,6
+2,11:10,3/5/2020,,Road Closure,103.768011,1.357763,Upper Bukit Timah Road,10
+3,18:15,3/6/2020,,Accident,103.7994,1.456481,Admiralty Road West,12
+4,9:45,3/6/2020,,Breakdown,103.748057,1.416297,7 Sungei Kadut Street 3,4
+5,11:45,3/6/2020,,Breakdown,103.75661,1.351334,Bukit Batok East Ave 2,8
+6,16:15,3/6/2020,,Breakdown,103.797956,1.313005,Holland Road,3
+7,17:55,3/6/2020,,Breakdown,103.90571,1.326104,PIE,2
+8,19:55,3/6/2020,,Heavy traffic,103.837456,1.295431,River Valley Road,6
+9,13:45,3/6/2020,,Road Closure,103.902193,1.33879,Bartley Rd East,11
+10,9:20,3/6/2020,,Roadworks,103.800902,1.435547,Woodlands Ring Rd,5
+11,17:15,3/6/2020,,Roadworks,103.807725,1.317494,Farrer Road,5
+12,17:45,3/6/2020,,Roadworks,103.771334,1.374602,Petir Road,3
+13,18:30,3/6/2020,,Roadworks,103.814294,1.413803,Mandai Avenue,10
+14,16:50,3/7/2020,,Heavy traffic,103.797956,1.313005,Holland Road,10
+15,21:50,3/7/2020,,Heavy traffic,103.746092,1.323244,AYE,12
+16,21:55,3/7/2020,,Heavy traffic,103.816548,1.448524,Sembawang Way,6
+17,20:00,3/7/2020,,Road Closure,103.819178,1.301823,Tanglin Road,8
+18,19:00,3/7/2020,,Roadworks,103.848475,1.371587,Ang Mo Kio Avenue 8,4
+19,19:45,3/7/2020,,Roadworks,103.849592,1.292307,Hill Street,2
+20,20:45,3/8/2020,,Road Closure,103.794582,1.319854,Coronation Road West,8
+21,20:16,3/8/2020,,Roadworks,103.829738,1.313037,Stevens Road,1
+22,15:20,3/9/2020,,Breakdown,103.917465,1.307292,Marine Parade Rd,4
+23,19:20,3/9/2020,,Breakdown,103.878781,1.331138,Macpherson Road,9
+24,20:53,3/9/2020,,Breakdown,103.772215,1.313547,Clementi Road,9
+25,10:20,3/9/2020,,Heavy traffic,103.785128,1.355149,BKE,3
+26,15:45,3/9/2020,,Heavy traffic,103.8085672,1.3257813,Dunearn Rd,9
+27,20:30,3/9/2020,,Heavy traffic,103.817937,1.33409,Lornie Highway,11
+28,20:35,3/9/2020,,Heavy traffic,103.842089,1.302024,CTE,6
+29,21:50,3/9/2020,,Heavy traffic,103.820553,1.451486,Canberra Road,3
+30,22:10,3/9/2020,,Heavy traffic,103.771011,1.377848,Bukit Panjang Road,9
+31,21:00,3/9/2020,,Road Closure,103.746651,1.394465,Choa Chu Kang Drive,3
+32,5:45,3/10/2020,,Accident,103.763696,1.312923,Clementi Ave 3,1
+33,12:15,3/10/2020,,Accident,103.891005,1.352947,Hougang Ave 3,2
+34,16:00,3/10/2020,,Accident,103.839026,1.313344,Newton Flyover,7
+35,19:06,3/10/2020,,Accident,103.840042,1.351798,Marymount Road,1
+36,11:25,3/10/2020,,Breakdown,103.789474,1.2960449,Ayer Rajah Crescent,12
+37,17:35,3/10/2020,,Breakdown,103.80125,1.335835,Eng Neo Avenue,8
+38,18:48,3/10/2020,,Breakdown,103.828509,1.372933,Upper Thomson Road,11
+39,14:15,3/10/2020,,Heavy traffic,103.887254,1.315977,Sims Avenue,5
+40,19:32,3/10/2020,,Heavy traffic,103.865714,1.309049,Kallang Road,4
+41,21:18,3/10/2020,,Heavy traffic,103.785128,1.355149,BKE,5
+42,22:05,3/10/2020,,Heavy traffic,103.767954,1.41834,Turf Club Avenue,5
+43,21:30,3/10/2020,,Road Closure,103.774143,1.364739,Dairy Farm Road,9
+44,20:45,3/10/2020,,Roadworks,103.775053,1.320519,Ulu Pandan Road,7
+45,20:55,3/10/2020,,Roadworks,103.756977,1.313879,West Coast Highway,6
+46,21:45,3/11/2020,,Road Closure,103.758842,1.335837,Toh Tuck Flyover,11
+48,21:15,3/11/2020,,Roadworks,103.753892,1.381212,Teck Whye Avenue,1
+49,22:00,3/12/2020,,Road Closure,103.798413,1.448243,Woodlands Avenue 9,4
+50,23:20,3/13/2020,,Road Closure,103.738437,1.373878,Brickland Road,3
+51,23:30,3/14/2020,,Road Closure,103.70896,1.33465,Jalan Boon Lay,1
