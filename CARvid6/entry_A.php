@@ -201,7 +201,7 @@
         // Set map 
         var map = new mapboxgl.Map({
             container: 'map', // container id
-            style: 'mapbox://styles/fuguemaster/ck7ho8svq54td1ip8d8w18vmt', // stylesheet location
+            style: 'mapbox://styles/fuguemaster/ck7ho8svq54td1ip8d8w18vmt', // mapstyle location
             center: [103.8198, 1.3521], // starting position [lng, lat], Singapore
             zoom: 12, // starting zoom
             maxBounds: bounds // Sets bounds as max
@@ -217,13 +217,14 @@
             marker.setLngLat(e.lngLat);
             marker.addTo(map);
            
+           // prints coordinates to HTML id (displayhelp)
             document.getElementById('displayhelp').innerHTML = 
                     'Select the location you want to report an incident: '
                     + '<br>' + 'Longitude: ' + e.lngLat.lng + '<br>' + 'Latitude: ' + e.lngLat.lat;
           
         });
 
-        // Geocoder function
+        // Geocoder function: allows user to search location to narrow down the area
         map.addControl(
         new MapboxGeocoder({
             accessToken: mapboxgl.accessToken,

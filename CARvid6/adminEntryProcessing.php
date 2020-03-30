@@ -82,7 +82,6 @@
                     <p> 
                     <!-- starts here -->
                         <button type="button" onclick="createGeoJSON()">Create GeoJSON</button>
-                        <!-- <a download="addgeojson.txt" id="downloadlink" style="display: none">Download</a> -->
                         <button id="downloadBtn">Download</button>
                         <a id="downloadAnchorElem" style="display:none"></a>
 
@@ -98,9 +97,11 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/geojson/0.5.0/geojson.min.js"></script>
 
         <script>
-        // starts here
+        
             var out;
             var testjson;
+
+            // Generate GeoJSON from contact form
             const createGeoJSON = () => {
                 const data = [
                     {
@@ -108,6 +109,7 @@
                         lng: document.getElementById("longitude").value
                     }
                 ];
+                // extracting variables from HTML contact form
                 data[0]["iid"] = document.getElementById("iid_value").value;
                 data[0]["timestamp"] = document.getElementById("timestamp_value").value;
                 data[0]["comments"] = document.getElementById("comments_value").value;
@@ -116,19 +118,16 @@
                 data[0]["pid"] = document.getElementById("pid_value").value;
                 data[0]["icon"] = document.getElementById("icon_value").value;
 
-
-
-
+                // GeoJSON parse
                 const dataGeoJSON = GeoJSON.parse(data, { Point: ["lat", "lng"] });
                 out = JSON.stringify(dataGeoJSON, null, 4);
-                document.getElementById("output").value = out;
+                document.getElementById("output").value = out;  // prints GeoJSON output
             }
             createGeoJSON();
 
-            document.getElementById("downloadBtn").addEventListener("click", downloadFile);
+            document.getElementById("downloadBtn").addEventListener("click", downloadFile); // download as GeoJSON file on button click
 
             function downloadFile() {
-                //document.getElementById("downloadAnchorElem");
                 var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(out);
                 var dlAnchorElem = document.getElementById('downloadAnchorElem');
                 dlAnchorElem.setAttribute("href",     dataStr     );

@@ -219,13 +219,14 @@
             marker.setLngLat(e.lngLat);
             marker.addTo(map);
            
-            document.getElementById('displayhelp').innerHTML = 
+           // prints coordinates to HTML id (displayhelp)
+           document.getElementById('displayhelp').innerHTML = 
                     'Select the location you want to report an incident: '
                     + '<br>' + 'Longitude: ' + e.lngLat.lng + '<br>' + 'Latitude: ' + e.lngLat.lat;
           
         });
 
-        // Geocoder function
+        // Geocoder function: allows user to search location to narrow down the area
         map.addControl(
         new MapboxGeocoder({
             accessToken: mapboxgl.accessToken,
